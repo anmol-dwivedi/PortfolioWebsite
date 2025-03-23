@@ -12,23 +12,40 @@ const TimelineExperience = () => {
       <VerticalTimeline>
         {timelineExperience.map((item, index) => (
           <VerticalTimelineElement
-            key={index}
-            contentStyle={{ background: "#1f1f1f", color: "#fff" }}
-            contentArrowStyle={{ borderRight: "7px solid #23283e" }}
-            date={item.date}
-            iconStyle={{ background: "#00bfff", color: "#fff" }}
-            icon={<MdWork />}
-          >
-            <h3 className="vertical-timeline-element-title">{item.title}</h3>
-            <h4 className="vertical-timeline-element-subtitle">
-              {item.company} – {item.location}
-            </h4>
-            <ul>
-              {item.description.map((point, i) => (
-                <li key={i}>{point}</li>
-              ))}
-            </ul>
-          </VerticalTimelineElement>
+          key={index}
+          contentStyle={{ background: "#1f1f1f", color: "#fff" }}
+          contentArrowStyle={{ borderRight: "7px solid #23283e" }}
+          date={item.date}
+          dateClassName="timeline-date"
+          iconStyle={{
+            background: "#ffffff",
+            width: "70px",
+            height: "70px",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            boxShadow: "0 0 0 4px #00bfff",
+            padding: "1px"
+          }}
+          icon={
+            <img
+              src={item.icon}
+              alt={item.company}
+              className="timeline-logo"
+            />
+          }
+        >
+          <h3 className="vertical-timeline-element-title">{item.title}</h3>
+          <h4 className="vertical-timeline-element-subtitle">
+            {item.company} – {item.location}
+          </h4>
+          <ul>
+            {item.description.map((point, i) => (
+              <li key={i}>{point}</li>
+            ))}
+          </ul>
+        </VerticalTimelineElement>
+        
         ))}
       </VerticalTimeline>
     </div>

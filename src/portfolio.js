@@ -474,9 +474,9 @@ const timelineExperience = [
     date: "Aug 2024 – Present",
     icon: require("./assets/images/utd_logo.png"), // Replace or reuse logos as needed
     description: [
-      "Mentored 35+ students in AWS Cloud & Predictive Analytics.",
-      "Helped students achieve AWS Cloud Practitioner certification.",
-      "Graded assignments, supported Blackboard setup, and resolved doubts."
+      "Coordinate and communicate important course announcements to ensure timely and effective student communication.",
+      "Support and mentor students by addressing their questions and clarifying doubts to facilitate a deeper understanding of course concepts.",
+      "Evaluate, grade, and provide feedback on assignments and exams to help students improve their performance and grasp of the subject matter."
     ]
   },
   {
@@ -486,9 +486,9 @@ const timelineExperience = [
     date: "Mar 2022 – Aug 2023",
     icon: require("./assets/images/gt_logo.png"),
     description: [
-      "Built 50+ dashboards, reduced audit time by 30%, uncovered $500K risk.",
-      "Audited $2B loan portfolio’s CECL model pre-implementation.",
-      "Designed KRIs for insurance underwriting and claims."
+      "Designed and deployed 50+ Power BI dashboards to automate internal audit processes, reducing audit turnaround time by 30% and surfacing $500K in potential financial risks.",
+      "Led a pre-implementation audit review for a $2B Commercial & Industrial Loan Portfolio’s CECL model, identifying compliance gaps and risk exposure.",
+      "Developed Key Risk Indicators (KRIs) and continuous monitoring dashboards for an insurance client, improving real-time oversight of underwriting and claims metrics."
     ]
   },
   {
@@ -498,9 +498,20 @@ const timelineExperience = [
     date: "Feb 2021 – Mar 2022",
     icon: require("./assets/images/ls.png"),
     description: [
-      "Built lead scoring model, improved conversions by 10%.",
-      "Automated 20+ data source ingestion pipelines using AWS.",
-      "Built Quicksight dashboards, saving 80+ monthly hours."
+      "Built a Python-based proof-of-concept lead scoring model, increasing qualified leads by 10% and improving conversion targeting for the sales team.",
+      "Automated data ingestion pipelines from 20+ marketing sources using AWS (Lambda, S3, Glue), reducing manual effort and enabling real-time dashboarding.",
+      "Developed interactive AWS Quicksight dashboards for performance tracking and insights, eliminating 80+ hours of monthly manual reporting."
+    ]
+  },
+  {
+    title: "Application Development Associate",
+    company: "Accenture",
+    location: "Hyderabad, India",
+    date: "Apr 2018 – Aug 2018",
+    icon: require("./assets/images/accenture.png"),
+    description: [
+      "Gained Hands on Experience on Python, SQL, HTML, CSS, JavaScript",
+      "Analyzed and processed large datasets using Python, SQL, and HTML to generate actionable insights, improving reporting efficiency by 10% for a client-facing application.", 
     ]
   }
 ];
