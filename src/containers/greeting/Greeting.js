@@ -55,12 +55,11 @@ export default function Greeting() {
             </div>
           </div>
           <div className="greeting-image-div">
-          <img
-  src={profileImage}
-  alt="Anmol Dwivedi"
-  className="profile-image"
-/>
-
+            <img
+              src={profileImage}
+              alt="Anmol Dwivedi"
+              className="profile-image"
+            />
           </div>
         </div>
       </div>

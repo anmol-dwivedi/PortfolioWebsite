@@ -30,7 +30,6 @@ const greeting = {
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
-
 //////////////////////////////////////////////////////////////////////////////////////////////
 
 // Social Media Links
@@ -41,115 +40,116 @@ const socialMediaLinks = {
   gmail: "dwivedi.anmol1996@gmail.com",
   instagram: "https://www.instagram.com/anmoldwivedi1996/",
   facebook: "https://www.facebook.com/anmol.dwivedi.39/",
-  // kaggle: 
+  // kaggle:
   // medium: "", // not provided
   // stackoverflow: "", // not provided
-  
+
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
 };
 
-
-
 //////////////////////////////////////////////////////////////////////////////////////////////
-
-
 
 // Skills Section
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "DATA SCIENTIST WHO BUILDS, SHIPS, AND DEPLOYS IMPACTFUL ML SOLUTIONS",
+  subTitle:
+    "DATA SCIENTIST WHO BUILDS, SHIPS, AND DEPLOYS IMPACTFUL ML SOLUTIONS",
   skills: [
-    emoji("⚡ Build scalable machine learning models for regression, classification, and recommendation systems using Python"),
-    emoji("⚡ Design and automate end-to-end data pipelines using SQL, PySpark, and Airflow on cloud platforms like AWS"),
-    emoji("⚡ Develop and deploy data science apps with Streamlit and FastAPI to enable business decision-making in real-time"),
-    emoji("⚡ Tell compelling stories using Power BI and Tableau dashboards, driving insights from millions of rows of raw data"),
+    emoji(
+      "⚡ Build scalable machine learning models for regression, classification, and recommendation systems using Python"
+    ),
+    emoji(
+      "⚡ Design and automate end-to-end data pipelines using SQL, PySpark, and Airflow on cloud platforms like AWS"
+    ),
+    emoji(
+      "⚡ Develop and deploy data science apps with Streamlit and FastAPI to enable business decision-making in real-time"
+    ),
+    emoji(
+      "⚡ Tell compelling stories using Power BI and Tableau dashboards, driving insights from millions of rows of raw data"
+    )
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
-  {
-    skillName: "Python",
-    fontAwesomeClassname: "fab fa-python"
-  },
-  {
-    skillName: "SQL",
-    fontAwesomeClassname: "fas fa-database"
-  },
-  {
-    skillName: "PySpark",
-    fontAwesomeClassname: "fas fa-fire" // symbolic for Spark
-  },
-  {
-    skillName: "TensorFlow",
-    fontAwesomeClassname: "fas fa-brain"
-  },
-  {
-    // skillName: "PyTorch",
-    // fontAwesomeClassname: "fas fa-brain" // same brain icon for DL frameworks
-  },
-  {
-    skillName: "Scikit-Learn",
-    fontAwesomeClassname: "fas fa-project-diagram"
-  },
-  {
-    skillName: "Airflow",
-    fontAwesomeClassname: "fas fa-wind" // symbolic for workflow automation
-  },
-  {
-    skillName: "Streamlit",
-    fontAwesomeClassname: "fas fa-desktop"
-  },
-  {
-    skillName: "FastAPI",
-    fontAwesomeClassname: "fas fa-rocket"
-  },
-  {
-    skillName: "Power BI",
-    fontAwesomeClassname: "fas fa-chart-bar"
-  },
-  {
-    skillName: "Tableau",
-    fontAwesomeClassname: "fas fa-chart-pie"
-  },
-  {
-    skillName: "AWS",
-    fontAwesomeClassname: "fab fa-aws"
-  },
-  {
-    skillName: "Docker",
-    fontAwesomeClassname: "fab fa-docker"
-  },
-  {
-    skillName: "Git",
-    fontAwesomeClassname: "fab fa-git-alt"
-  },
-  {
-    skillName: "Linux",
-    fontAwesomeClassname: "fab fa-linux"
-  },
-  {
-    skillName: "Anaconda",
-    fontAwesomeClassname: "fas fa-circle-notch" // symbolic, since no official icon
-  },
-  {
-    skillName: "JIRA",
-    fontAwesomeClassname: "fas fa-tasks" // symbolic for project/task management
-  }
-],
-display: true
- // Set false to hide this section, defaults to true
+    {
+      skillName: "Python",
+      fontAwesomeClassname: "fab fa-python"
+    },
+    {
+      skillName: "SQL",
+      fontAwesomeClassname: "fas fa-database"
+    },
+    {
+      skillName: "PySpark",
+      fontAwesomeClassname: "fas fa-fire" // symbolic for Spark
+    },
+    {
+      skillName: "TensorFlow",
+      fontAwesomeClassname: "fas fa-brain"
+    },
+    {
+      // skillName: "PyTorch",
+      // fontAwesomeClassname: "fas fa-brain" // same brain icon for DL frameworks
+    },
+    {
+      skillName: "Scikit-Learn",
+      fontAwesomeClassname: "fas fa-project-diagram"
+    },
+    {
+      skillName: "Airflow",
+      fontAwesomeClassname: "fas fa-wind" // symbolic for workflow automation
+    },
+    {
+      skillName: "Streamlit",
+      fontAwesomeClassname: "fas fa-desktop"
+    },
+    {
+      skillName: "FastAPI",
+      fontAwesomeClassname: "fas fa-rocket"
+    },
+    {
+      skillName: "Power BI",
+      fontAwesomeClassname: "fas fa-chart-bar"
+    },
+    {
+      skillName: "Tableau",
+      fontAwesomeClassname: "fas fa-chart-pie"
+    },
+    {
+      skillName: "AWS",
+      fontAwesomeClassname: "fab fa-aws"
+    },
+    {
+      skillName: "Docker",
+      fontAwesomeClassname: "fab fa-docker"
+    },
+    {
+      skillName: "Git",
+      fontAwesomeClassname: "fab fa-git-alt"
+    },
+    {
+      skillName: "Linux",
+      fontAwesomeClassname: "fab fa-linux"
+    },
+    {
+      skillName: "Anaconda",
+      fontAwesomeClassname: "fas fa-circle-notch" // symbolic, since no official icon
+    },
+    {
+      skillName: "JIRA",
+      fontAwesomeClassname: "fas fa-tasks" // symbolic for project/task management
+    }
+  ],
+  display: true
+  // Set false to hide this section, defaults to true
 };
 
-
 //////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
 
 // Education Section
 
@@ -179,7 +179,7 @@ const educationInfo = {
         "Completed a rigorous one-year Data Science program focused on Python, SQL, Tableau, statistics, data mining, and machine learning; ranked 3rd in a cohort of 60 students based on academic performance and project evaluations.",
         "Developed strong expertise in data manipulation, wrangling, and analysis using Python (Pandas, NumPy) and SQL, working with large, messy datasets in graded assignments and real-world case studies.",
         "Ranked Top 10 in a national-level hackathon for predicting restaurant turnover using regression modeling, data wrangling, and advanced feature engineering techniques.",
-        "Applied data mining and machine learning algorithms (regression, classification, clustering) across multiple projects, including a Customer Churn Prediction capstone using feature engineering, model tuning, and cross-validation.",
+        "Applied data mining and machine learning algorithms (regression, classification, clustering) across multiple projects, including a Customer Churn Prediction capstone using feature engineering, model tuning, and cross-validation."
       ]
     },
     {
@@ -188,19 +188,15 @@ const educationInfo = {
       subHeader: "Bachelor of Science in Mechanical Engineering",
       duration: "September 2013 - April 2017",
       gpa: "8.89/10.00",
-      descBullets: ["Designed and simulated complex mechanical components using tools like AutoCAD, CATIA, Ansys, and SolidWorks for academic projects focused on aerodynamics and propulsion systems.President at KIIT Aeronautical Society",
+      descBullets: [
+        "Designed and simulated complex mechanical components using tools like AutoCAD, CATIA, Ansys, and SolidWorks for academic projects focused on aerodynamics and propulsion systems.President at KIIT Aeronautical Society",
         "Led the KIIT Aeronautical Society as President, organizing 10+ technical workshops and competitions in aeromodelling, CFD, and propulsion design; boosted student engagement in core mechanical domains by 40%."
       ]
     }
   ]
 };
 
-
-
 //////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
 
 // Your top 3 proficient stacks/tech experience
 
@@ -223,11 +219,7 @@ const techStack = {
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
 };
 
-
-
 //////////////////////////////////////////////////////////////////////////////////////////////
-
-
 
 // Work experience section
 
@@ -253,10 +245,10 @@ const workExperiences = {
       date: "mar 2022 – Aug 2023",
       desc: "Worked as a Business Analyst, delivering data-driven audit automation, financial risk analysis, and executive reporting solutions for clients across banking and insurance domains.",
       descBullets: [
-      "Designed and deployed 50+ Power BI dashboards to automate internal audit processes, reducing audit turnaround time by 30% and surfacing $500K in potential financial risks.",
-      "Led a pre-implementation audit review for a $2B Commercial & Industrial Loan Portfolio’s CECL model, identifying compliance gaps and risk exposure.",
-      "Developed Key Risk Indicators (KRIs) and continuous monitoring dashboards for an insurance client, improving real-time oversight of underwriting and claims metrics.",
-      ""
+        "Designed and deployed 50+ Power BI dashboards to automate internal audit processes, reducing audit turnaround time by 30% and surfacing $500K in potential financial risks.",
+        "Led a pre-implementation audit review for a $2B Commercial & Industrial Loan Portfolio’s CECL model, identifying compliance gaps and risk exposure.",
+        "Developed Key Risk Indicators (KRIs) and continuous monitoring dashboards for an insurance client, improving real-time oversight of underwriting and claims metrics.",
+        ""
       ]
     },
     {
@@ -269,7 +261,7 @@ const workExperiences = {
         "Built a Python-based proof-of-concept lead scoring model, increasing qualified leads by 10% and improving conversion targeting for the sales team.",
         "Automated data ingestion pipelines from 20+ marketing sources using AWS (Lambda, S3, Glue), reducing manual effort and enabling real-time dashboarding.",
         "Developed interactive AWS Quicksight dashboards for performance tracking and insights, eliminating 80+ hours of monthly manual reporting."
-        ]
+      ]
     },
     {
       role: "Application Development Associate",
@@ -279,17 +271,13 @@ const workExperiences = {
       desc: "Worked as an Application Development Associate, leveraging Python and SQL to process large datasets and improve reporting efficiency in enterprise data systems.",
       descBullets: [
         "Gained Hands on Experience on Python, SQL, HTML, CSS, JavaScript",
-        "Analyzed and processed large datasets using Python, SQL, and HTML to generate actionable insights, improving reporting efficiency by 10% for a client-facing application.",
-        ]
+        "Analyzed and processed large datasets using Python, SQL, and HTML to generate actionable insights, improving reporting efficiency by 10% for a client-facing application."
+      ]
     }
   ]
 };
 
-
 //////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
 
 /* Your Open Source Section to View Your Github Pinned Projects
 To know how to get github key look at readme.md */
@@ -299,15 +287,7 @@ const openSource = {
   display: true // Set false to hide this section, defaults to true
 };
 
-
-
-
 //////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
-
-
 
 // Some big projects you have worked on
 

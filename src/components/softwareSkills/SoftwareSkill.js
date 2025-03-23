@@ -27,9 +27,6 @@ import {skillsSection} from "../../portfolio";
 
 //////////////////////////////////////
 
-
-
-
 export default function SoftwareSkill() {
   return (
     <div>
