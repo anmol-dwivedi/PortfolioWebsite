@@ -472,7 +472,8 @@ const timelineExperience = [
     company: "UT Dallas",
     location: "Dallas, TX",
     date: "Aug 2024 – Present",
-    icon: require("./assets/images/utd_logo.png"), // Replace or reuse logos as needed
+    icon: require("./assets/images/utd_logo.png"),
+    summary: "Graduate Teaching Assistant for Predictive Analytics under Proff Shervin Tehrani and AWS Cloud Fundamentals under Proff. Abdul Raheem",
     description: [
       "Coordinate and communicate important course announcements to ensure timely and effective student communication.",
       "Support and mentor students by addressing their questions and clarifying doubts to facilitate a deeper understanding of course concepts.",
@@ -485,6 +486,7 @@ const timelineExperience = [
     location: "Bengaluru, India",
     date: "Mar 2022 – Aug 2023",
     icon: require("./assets/images/gt_logo.png"),
+    summary: "Worked as a Data Scientist, delivering data-driven audit automation, financial risk analysis, and executive reporting solutions for clients across banking and insurance domains.",
     description: [
       "Designed and deployed 50+ Power BI dashboards to automate internal audit processes, reducing audit turnaround time by 30% and surfacing $500K in potential financial risks.",
       "Led a pre-implementation audit review for a $2B Commercial & Industrial Loan Portfolio’s CECL model, identifying compliance gaps and risk exposure.",
@@ -497,6 +499,7 @@ const timelineExperience = [
     location: "Mumbai, India",
     date: "Feb 2021 – Mar 2022",
     icon: require("./assets/images/ls.png"),
+    summary: "Served as the first Data Analyst on the Data Solutions team, spearheading the development of marketing intelligence and automation frameworks from the ground up using Python, AWS, and BI tools for multi-channel digital campaigns.",
     description: [
       "Built a Python-based proof-of-concept lead scoring model, increasing qualified leads by 10% and improving conversion targeting for the sales team.",
       "Automated data ingestion pipelines from 20+ marketing sources using AWS (Lambda, S3, Glue), reducing manual effort and enabling real-time dashboarding.",
@@ -509,6 +512,7 @@ const timelineExperience = [
     location: "Hyderabad, India",
     date: "Apr 2018 – Aug 2018",
     icon: require("./assets/images/accenture.png"),
+    summary: "Worked on front-end and back-end development to support enterprise solutions.",
     description: [
       "Gained Hands on Experience on Python, SQL, HTML, CSS, JavaScript",
       "Analyzed and processed large datasets using Python, SQL, and HTML to generate actionable insights, improving reporting efficiency by 10% for a client-facing application.", 

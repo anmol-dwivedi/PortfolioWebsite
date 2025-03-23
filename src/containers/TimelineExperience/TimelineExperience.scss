@@ -40,3 +40,12 @@
   display: flex;
   justify-content: center;
 }
+
+.timeline-summary {
+  font-size: 1.6rem;
+  font-style: italic;         // increased size
+  font-weight: 700;          // slightly stronger weight
+  color: #888ea1;            // neutral tone that works on both dark/light
+  margin: 12px 0;
+  line-height: 1.5;
+}

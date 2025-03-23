@@ -36,14 +36,21 @@ const TimelineExperience = () => {
           }
         >
           <h3 className="vertical-timeline-element-title">{item.title}</h3>
-          <h4 className="vertical-timeline-element-subtitle">
-            {item.company} – {item.location}
-          </h4>
-          <ul>
-            {item.description.map((point, i) => (
-              <li key={i}>{point}</li>
-            ))}
-          </ul>
+<h4 className="vertical-timeline-element-subtitle">
+  {item.company} – {item.location}
+</h4>
+
+{item.summary && (
+  <p className="timeline-summary">{item.summary}</p>
+)}
+
+<ul>
+  {item.description.map((point, i) => (
+    <li key={i}>{point}</li>
+  ))}
+</ul>
+
+
         </VerticalTimelineElement>
         
         ))}
