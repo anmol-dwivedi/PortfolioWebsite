@@ -1,0 +1,38 @@
+import React from "react";
+import "./TimelineExperience.scss";
+import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
+import { timelineExperience } from "../../portfolio";
+import { MdWork } from "react-icons/md";
+
+const TimelineExperience = () => {
+  return (
+    <div className="timeline-container" id="timeline-experience">
+      <h1 className="timeline-title">Experience</h1>
+      <VerticalTimeline>
+        {timelineExperience.map((item, index) => (
+          <VerticalTimelineElement
+            key={index}
+            contentStyle={{ background: "#1f1f1f", color: "#fff" }}
+            contentArrowStyle={{ borderRight: "7px solid #23283e" }}
+            date={item.date}
+            iconStyle={{ background: "#00bfff", color: "#fff" }}
+            icon={<MdWork />}
+          >
+            <h3 className="vertical-timeline-element-title">{item.title}</h3>
+            <h4 className="vertical-timeline-element-subtitle">
+              {item.company} – {item.location}
+            </h4>
+            <ul>
+              {item.description.map((point, i) => (
+                <li key={i}>{point}</li>
+              ))}
+            </ul>
+          </VerticalTimelineElement>
+        ))}
+      </VerticalTimeline>
+    </div>
+  );
+};
+
+export default TimelineExperience;

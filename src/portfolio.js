@@ -465,6 +465,51 @@ const twitterDetails = {
 
 const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
+/////////////////////////////////////////////////////////////////////////
+const timelineExperience = [
+  {
+    title: "Graduate Teaching Assistant",
+    company: "UT Dallas",
+    location: "Dallas, TX",
+    date: "Aug 2024 – Present",
+    icon: require("./assets/images/utd_logo.png"), // Replace or reuse logos as needed
+    description: [
+      "Mentored 35+ students in AWS Cloud & Predictive Analytics.",
+      "Helped students achieve AWS Cloud Practitioner certification.",
+      "Graded assignments, supported Blackboard setup, and resolved doubts."
+    ]
+  },
+  {
+    title: "Jr. Data Scientist",
+    company: "Grant Thornton",
+    location: "Bengaluru, India",
+    date: "Mar 2022 – Aug 2023",
+    icon: require("./assets/images/gt_logo.png"),
+    description: [
+      "Built 50+ dashboards, reduced audit time by 30%, uncovered $500K risk.",
+      "Audited $2B loan portfolio’s CECL model pre-implementation.",
+      "Designed KRIs for insurance underwriting and claims."
+    ]
+  },
+  {
+    title: "Data Analyst",
+    company: "LS Digital",
+    location: "Mumbai, India",
+    date: "Feb 2021 – Mar 2022",
+    icon: require("./assets/images/ls.png"),
+    description: [
+      "Built lead scoring model, improved conversions by 10%.",
+      "Automated 20+ data source ingestion pipelines using AWS.",
+      "Built Quicksight dashboards, saving 80+ monthly hours."
+    ]
+  }
+];
+
+
+
+/////////////////////////////////////////////////////////////////////////
+
+
 export {
   illustration,
   greeting,
@@ -483,5 +528,6 @@ export {
   contactInfo,
   twitterDetails,
   isHireable,
-  resumeSection
+  resumeSection,
+  timelineExperience
 };

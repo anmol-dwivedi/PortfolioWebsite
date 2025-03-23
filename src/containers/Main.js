@@ -21,6 +21,12 @@ import {StyleProvider} from "../contexts/StyleContext";
 import {useLocalStorage} from "../hooks/useLocalStorage";
 import "./Main.scss";
 
+//////////////////////////////////////////////////////////////////////////////////
+import TimelineExperience from "../containers/TimelineExperience/TimelineExperience";
+///////////////////////////////////////////////////////////////////////////////////
+
+
+
 const Main = () => {
   const darkPref = window.matchMedia("(prefers-color-scheme: dark)");
   const [isDark, setIsDark] = useLocalStorage("isDark", darkPref.matches);
@@ -56,6 +62,10 @@ const Main = () => {
             <StackProgress />
             <Education />
             <WorkExperience />
+            
+            <TimelineExperience />
+
+
             <Projects />
             <StartupProject />
             <Achievement />
