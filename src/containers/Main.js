@@ -4,16 +4,16 @@ import Greeting from "./greeting/Greeting";
 import Skills from "./skills/Skills";
 // import StackProgress from "./skillProgress/skillProgress";
 import WorkExperience from "./workExperience/WorkExperience";
-import Projects from "./projects/Projects";
-import StartupProject from "./StartupProjects/StartupProject";
+// import Projects from "./projects/Projects";
+// import StartupProject from "./StartupProjects/StartupProject";
 import Achievement from "./achievement/Achievement";
-import Blogs from "./blogs/Blogs";
+// import Blogs from "./blogs/Blogs";                 # removed for now
 import Footer from "../components/footer/Footer";
-import Talks from "./talks/Talks";
-import Podcast from "./podcast/Podcast";
+// import Talks from "./talks/Talks";
+// import Podcast from "./podcast/Podcast";           # removed for now
 import Education from "./education/Education";
 import ScrollToTopButton from "./topbutton/Top";
-import Twitter from "./twitter-embed/twitter";
+// import Twitter from "./twitter-embed/twitter";     # removed for now
 import Profile from "./profile/Profile";
 import SplashScreen from "./splashScreen/SplashScreen";
 import {splashScreen} from "../portfolio";
@@ -61,15 +61,15 @@ const Main = () => {
             <Skills />
             {/* <StackProgress />  */}
             <Education />
-            <WorkExperience />            
-            <TimelineExperience />
-            <Projects />
-            <StartupProject />
+            <TimelineExperience />    {/* # moved the work ex timline afte the education */}           
+            {/* <Projects /> */}
             <Achievement />
-            <Blogs />
-            <Talks />
-            <Twitter />
-            <Podcast />
+            <WorkExperience />         {/*this is the old work experience and I need to convert this into the extra curriculars section*/}
+            {/* <StartupProject /> */}
+            {/* <Blogs />         # not needed in the curent portfolio */}
+            {/*<Talks />          # not needed in the curent portfolio */}
+            {/* <Twitter />       # not needed in the current portfolio*/}
+            {/* <Podcast />       # not needed in the current portfolio*/}
             <Profile />
             <Footer />
             <ScrollToTopButton />
