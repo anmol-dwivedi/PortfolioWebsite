@@ -442,6 +442,95 @@ const projectsSection = {
 };
 
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Certification Section
+const certificationsSection = {
+  title: emoji("Certifications 📜"),
+  subtitle: "Verified certifications from my learning journey",
+  achievementsCards: [
+    {
+      title: "AWS Cloud Practitioner",
+      subtitle: "Earned after completing AWS fundamentals and passing the exam.",
+      image: require("./assets/images/aws-cert.png"),
+      imageAlt: "AWS Certification",
+      footerLink: [
+        { name: "View Credential", url: "https://..." }
+      ]
+    },
+    // Add more certs...
+    {
+      title: "AWS Cloud Practitioner",
+      subtitle: "Earned after completing AWS fundamentals and passing the exam.",
+      image: require("./assets/images/aws-cert.png"),
+      imageAlt: "AWS Certification",
+      footerLink: [
+        { name: "View Credential", url: "https://..." }
+      ]
+    },
+    {
+      title: "AWS Cloud Practitioner",
+      subtitle: "Earned after completing AWS fundamentals and passing the exam.",
+      image: require("./assets/images/aws-cert.png"),
+      imageAlt: "AWS Certification",
+      footerLink: [
+        { name: "View Credential", url: "https://..." }
+      ]
+    }
+  ],
+  display: true
+};
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Achievement Section
+const achievementsSection = {
+  title: emoji("Achievements 🎉"),
+  subtitle: "Celebrating memorable moments and extracurricular wins",
+  achievementsCards: [
+    {
+      title: "Toastmasters Icebreaker",
+      subtitle: "Delivered my first speech at UTD Toastmasters!",
+      image: require("./assets/images/toastmasters.png"),
+      imageAlt: "Toastmasters",
+      footerLink: [
+        { name: "Photo", url: "https://..." }
+      ]
+    },
+    {
+      title: "Toastmasters Icebreaker",
+      subtitle: "Delivered my first speech at UTD Toastmasters!",
+      image: require("./assets/images/toastmasters.png"),
+      imageAlt: "Toastmasters",
+      footerLink: [
+        { name: "Photo", url: "https://..." }
+      ]
+    },
+    {
+      title: "Toastmasters Icebreaker",
+      subtitle: "Delivered my first speech at UTD Toastmasters!",
+      image: require("./assets/images/toastmasters.png"),
+      imageAlt: "Toastmasters",
+      footerLink: [
+        { name: "Photo", url: "https://..." }
+      ]
+    }
+    // Add more moments...
+  ],
+  display: true
+};
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
 
 // Blogs Section
 
@@ -610,6 +699,8 @@ export {
   bigProjects,
   // achievementSection,
   projectsSection,
+  certificationsSection,
+  achievementsSection,
   blogSection,
   talkSection,
   podcastSection,

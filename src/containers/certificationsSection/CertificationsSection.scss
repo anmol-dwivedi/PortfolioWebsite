@@ -1,0 +1,44 @@
+@import "../../_globalColor";
+
+.certifications-heading {
+  font-size: 56px;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0px;
+}
+
+.certifications-subtitle {
+  text-transform: uppercase;
+  margin: 0px;
+  margin-bottom: 50px;
+}
+
+.subTitle {
+  color: $subTitle;
+}
+
+.certifications-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem 0;
+}
+
+@media (max-width: 1380px) {
+  .certifications-heading {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .certifications-heading {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .certifications-subtitle {
+    font-size: 16px;
+    line-height: normal;
+    text-align: center;
+  }
+}
