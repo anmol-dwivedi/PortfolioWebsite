@@ -326,9 +326,9 @@ const bigProjects = {
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
+  title: emoji("Projects 🏆 "),
   subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+    "Some Cool Projects that I have worked on !",
 
   achievementsCards: [
     {
@@ -441,6 +441,8 @@ const achievementSection = {
   display: true // Set false to hide this section, defaults to true
 };
 
+
+
 // Blogs Section
 
 const blogSection = {
@@ -464,6 +466,11 @@ const blogSection = {
   ],
   display: true // Set false to hide this section, defaults to true
 };
+
+
+
+
+
 
 // Talks Sections
 
@@ -497,6 +504,13 @@ const podcastSection = {
   display: true // Set false to hide this section, defaults to true
 };
 
+
+
+
+
+
+
+
 // Resume Section
 const resumeSection = {
   title: "Resume",
@@ -523,7 +537,7 @@ const twitterDetails = {
 
 const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
-/////////////////////////////////////////////////////////////////////////
+// /////////////////////////////////////////////////////////////////////////
 const timelineExperience = [
   {
     title: "Graduate Teaching Assistant",
