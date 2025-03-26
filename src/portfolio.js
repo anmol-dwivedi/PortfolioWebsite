@@ -325,7 +325,7 @@ const bigProjects = {
 // Achievement Section
 // Include certificates, talks etc
 
-const achievementSection = {
+const projectsSection = {
   title: emoji("Projects 🏆 "),
   subtitle:
     "Some Cool Projects that I have worked on !",
@@ -608,7 +608,8 @@ export {
   workExperiences,
   openSource,
   bigProjects,
-  achievementSection,
+  // achievementSection,
+  projectsSection,
   blogSection,
   talkSection,
   podcastSection,

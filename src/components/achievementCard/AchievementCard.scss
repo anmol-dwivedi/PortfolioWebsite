@@ -60,18 +60,23 @@
   color: $lightBackground3;
   vertical-align: middle;
   align-items: center;
-  border-radius: 4px;
+  border-radius: 6px;             // more rounded corners
   display: inline-flex;
-  font-size: 0.75rem;
-  height: 2em;
+  font-size: 0.9rem;              // larger font
+  height: 2.5em;                  // taller button
   justify-content: center;
   white-space: nowrap;
   line-height: 1.5;
   margin: 0 0.5rem 0.5rem 0;
-  padding: 0 0.75em;
+  padding: 0 1.2em;               // more horizontal space
   cursor: pointer;
   transition: 0.2s ease-in;
+  font-weight: 600;               // optional: makes text stand out
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); // subtle elevation
 }
+
 span.certificate-tag:hover {
   background: $buttonHover;
+  transform: scale(1.05);
 }
+

@@ -1,32 +1,42 @@
 @import "../../_globalColor";
 
-.achievement-heading {
+.projects-heading {
   font-size: 56px;
   font-weight: 400;
   line-height: normal;
   margin: 0px;
 }
-.achievement-subtitle {
+
+.projects-subtitle {
   text-transform: uppercase;
   margin: 0px;
   margin-bottom: 50px;
 }
+
 .subTitle {
   color: $subTitle;
 }
 
-/* Media Query */
+.projects-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem 0;
+}
+
 @media (max-width: 1380px) {
-  .achievement-heading {
+  .projects-heading {
     font-size: 40px;
   }
 }
+
 @media (max-width: 768px) {
-  .achievement-heading {
+  .projects-heading {
     font-size: 30px;
     text-align: center;
   }
-  .achievement-subtitle {
+
+  .projects-subtitle {
     font-size: 16px;
     line-height: normal;
     text-align: center;

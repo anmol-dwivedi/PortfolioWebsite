@@ -6,7 +6,12 @@ import Skills from "./skills/Skills";
 import WorkExperience from "./workExperience/WorkExperience";
 // import Projects from "./projects/Projects";
 // import StartupProject from "./StartupProjects/StartupProject";
-import Achievement from "./achievement/Achievement";
+
+
+// import Achievement from "./projectsSection/ProjectsSection";
+import ProjectsSection from "./projectsSection/ProjectsSection";
+
+
 // import Blogs from "./blogs/Blogs";                 # removed for now
 import Footer from "../components/footer/Footer";
 // import Talks from "./talks/Talks";
@@ -63,7 +68,7 @@ const Main = () => {
             <Education />
             <TimelineExperience />    {/* # moved the work ex timline afte the education */}           
             {/* <Projects /> */}
-            <Achievement />
+            <ProjectsSection />
             <WorkExperience />         {/*this is the old work experience and I need to convert this into the extra curriculars section*/}
             {/* <StartupProject /> */}
             {/* <Blogs />         # not needed in the curent portfolio */}
