@@ -1,5 +1,3 @@
-// File: /src/containers/leadershipSection/LeadershipSection.scss
-
 @import "../../_globalColor";
 
 .leadership-heading {
@@ -26,26 +24,28 @@
   padding: 1rem 0;
 }
 
-/* ⬇️ Doubled card height only for Leadership section */
+/* Doubled card height only for Leadership section */
 .leadership-cards-grid .achievement-card {
   height: 700px;
 }
 
-@media (max-width: 1380px) {
-  .leadership-heading {
-    font-size: 40px;
-  }
+/* Leadership card image layout fix */
+.leadership-card-wrapper .certificate-image-div {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 0.5rem; /* Adds spacing between image and card edge */
+  box-sizing: border-box;
 }
 
-@media (max-width: 768px) {
-  .leadership-heading {
-    font-size: 30px;
-    text-align: center;
-  }
-
-  .leadership-subtitle {
-    font-size: 16px;
-    line-height: normal;
-    text-align: center;
-  }
+.leadership-card-wrapper .card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Better visibility, avoids cropping faces */
+  display: block;
+  border-radius: 6px; /* Optional: Rounded image */
 }
+
+

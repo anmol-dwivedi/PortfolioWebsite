@@ -1,5 +1,3 @@
-// File: /src/containers/leadershipSection/LeadershipSection.js
-
 import React, { useContext } from "react";
 import "./LeadershipSection.scss";
 import AchievementCard from "../../components/achievementCard/AchievementCard";
@@ -42,17 +40,18 @@ export default function LeadershipSection() {
           <div className="leadership-cards-grid">
             {leadershipSection.leadershipCards.map((card, i) => {
               return (
-                <AchievementCard
-                  key={i}
-                  isDark={isDark}
-                  cardInfo={{
-                    title: card.title,
-                    description: card.subtitle,
-                    image: card.image,
-                    imageAlt: card.imageAlt,
-                    footer: card.footerLink
-                  }}
-                />
+                <div className="leadership-card-wrapper" key={i}>
+                  <AchievementCard
+                    isDark={isDark}
+                    cardInfo={{
+                      title: card.title,
+                      description: card.subtitle,
+                      image: card.image,
+                      imageAlt: card.imageAlt,
+                      footer: card.footerLink
+                    }}
+                  />
+                </div>
               );
             })}
           </div>
