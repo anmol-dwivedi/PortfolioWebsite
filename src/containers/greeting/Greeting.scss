@@ -143,3 +143,53 @@
     width: auto;
   }
 }
+
+.greeting-bullet {
+  font-size: 18px;
+  margin-top: 10px;
+  line-height: 1.6;
+  color: $subTitle;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+    text-align: center;
+  }
+}
+
+/* Reused from SoftwareSkill.scss */
+.software-skills-main-div {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.dev-icons {
+  padding-left: 0;
+  list-style: none;
+  font-size: 3rem;
+  margin-bottom: 0px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.software-skill-inline {
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.software-skill-inline > i {
+  color: $subTitle;
+}
+
+.software-skill-inline > i:hover {
+  color: $skillsColor;
+}
+
+.software-skill-inline > p {
+  color: $subTitle;
+  font-size: 10px;
+}
+
+.software-skill-inline > i:hover ~ p {
+  color: $skillsColor;
+}

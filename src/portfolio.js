@@ -151,7 +151,7 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fas fa-tasks" // symbolic for project/task management
     }
   ],
-  display: true
+  display: false
   // Set false to hide this section, defaults to true
 };
 

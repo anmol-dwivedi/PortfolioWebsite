@@ -4,10 +4,9 @@ import emoji from "react-easy-emoji";
 import "./Greeting.scss";
 import profileImage from "../../assets/images/anmol_landing_page.jpeg";
 
-import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
-import { illustration, greeting, skillsSection } from "../../portfolio";
+import { greeting, skillsSection } from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function Greeting() {
@@ -31,12 +30,28 @@ export default function Greeting() {
                 {greeting.subTitle}
               </p>
 
-              {/* Merged skill bullet points */}
+              {/* Skill bullet points */}
               {skillsSection.skills.map((skill, index) => (
                 <p key={index} className={isDark ? "dark-mode greeting-bullet" : "greeting-bullet"}>
                   {skill}
                 </p>
               ))}
+
+              {/* Software skill icons */}
+              <div className="software-skills-main-div">
+                <ul className="dev-icons">
+                  {skillsSection.softwareSkills.map((skill, index) => (
+                    <li
+                      key={index}
+                      className="software-skill-inline"
+                      name={skill.skillName}
+                    >
+                      <i className={skill.fontAwesomeClassname}></i>
+                      <p>{skill.skillName}</p>
+                    </li>
+                  ))}
+                </ul>
+              </div>
 
               <div id="resume" className="empty-div"></div>
               <SocialMedia />
