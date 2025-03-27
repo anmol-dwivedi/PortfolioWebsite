@@ -483,7 +483,7 @@ const certificationsSection = {
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Leadership Section
 export const leadershipSection = {
-  title: "Leadership",
+  title: "Leadership 🎯",
   subtitle: "Roles that reflect my passion for leading and inspiring others.",
   display: true, // Set to false to hide this section
   leadershipCards: [

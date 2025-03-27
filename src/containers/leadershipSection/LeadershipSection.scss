@@ -1,8 +1,11 @@
+// File: /src/containers/leadershipSection/LeadershipSection.scss
+
 @import "../../_globalColor";
 
 .leadership-heading {
   font-size: 56px;
   font-weight: 400;
+  line-height: normal;
   margin: 0px;
 }
 
@@ -17,19 +20,21 @@
 }
 
 .leadership-cards-grid {
-  display: flex;                // ← make it flex
-  flex-direction: row;          // ← horizontal layout
-  overflow-x: auto;             // ← horizontal scrolling if needed
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
   padding: 1rem 0;
-  scroll-snap-type: x mandatory;
 }
 
-.leadership-cards-grid > * {
-  scroll-snap-align: start;
-  flex: 0 0 auto;               // ← prevent shrinking and maintain full card
-  min-width: 350px;             // ← adjust as per your card width
-  max-width: 400px;
+/* ⬇️ Doubled card height only for Leadership section */
+.leadership-cards-grid .achievement-card {
+  height: 600px;
+}
+
+@media (max-width: 1380px) {
+  .leadership-heading {
+    font-size: 40px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -40,6 +45,7 @@
 
   .leadership-subtitle {
     font-size: 16px;
+    line-height: normal;
     text-align: center;
   }
 }
