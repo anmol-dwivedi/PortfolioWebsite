@@ -3,13 +3,14 @@ import Header from "../components/header/Header";
 import Greeting from "./greeting/Greeting";
 import Skills from "./skills/Skills";
 // import StackProgress from "./skillProgress/skillProgress";
-import WorkExperience from "./workExperience/WorkExperience";
+// import WorkExperience from "./workExperience/WorkExperience";
 // import Projects from "./projects/Projects";
 // import StartupProject from "./StartupProjects/StartupProject";
 import CertificationsSection from "./certificationsSection/CertificationsSection";
 import AchievementsSection from "./achievementsSection/AchievementsSection";
 // import Achievement from "./projectsSection/ProjectsSection";
 import ProjectsSection from "./projectsSection/ProjectsSection";
+import LeadershipSection from "./leadershipSection/LeadershipSection";
 
 
 // import Blogs from "./blogs/Blogs";                 # removed for now
@@ -71,12 +72,13 @@ const Main = () => {
             <ProjectsSection />
             <CertificationsSection />
             <AchievementsSection />
-            <WorkExperience />         {/*this is the old work experience and I need to convert this into the extra curriculars section*/}
+            {/* <WorkExperience />         this is the old work experience and I need to convert this into the extra curriculars section */}
             {/* <StartupProject /> */}
             {/* <Blogs />         # not needed in the curent portfolio */}
             {/*<Talks />          # not needed in the curent portfolio */}
             {/* <Twitter />       # not needed in the current portfolio*/}
             {/* <Podcast />       # not needed in the current portfolio*/}
+            <LeadershipSection />
             <Profile />
             <Footer />
             <ScrollToTopButton />

@@ -221,61 +221,61 @@ const techStack = {
 
 //////////////////////////////////////////////////////////////////////////////////////////////
 
-// Work experience section
+//Work experience section
 
-const workExperiences = {
-  display: true, //Set it to true to show workExperiences Section
-  experience: [
-    {
-      role: "Graduate Teaching Assistant",
-      company: "University of Texas at Dallas",
-      companylogo: require("./assets/images/utd_logo.png"),
-      date: "Aug 2024 – Present",
-      desc: "Graduate Teaching Assistant for Predictive Analytics under Proff Shervin Tehrani and AWS Cloud Fundamentals under Proff. Abdul Raheem",
-      descBullets: [
-        "Coordinate and communicate important course announcements to ensure timely and effective student communication.",
-        "Support and mentor students by addressing their questions and clarifying doubts to facilitate a deeper understanding of course concepts.",
-        "Evaluate, grade, and provide feedback on assignments and exams to help students improve their performance and grasp of the subject matter."
-      ]
-    },
-    {
-      role: "Jr. Data Scientist",
-      company: "Grant Thornton",
-      companylogo: require("./assets/images/gt_logo.png"),
-      date: "mar 2022 – Aug 2023",
-      desc: "Worked as a Business Analyst, delivering data-driven audit automation, financial risk analysis, and executive reporting solutions for clients across banking and insurance domains.",
-      descBullets: [
-        "Designed and deployed 50+ Power BI dashboards to automate internal audit processes, reducing audit turnaround time by 30% and surfacing $500K in potential financial risks.",
-        "Led a pre-implementation audit review for a $2B Commercial & Industrial Loan Portfolio’s CECL model, identifying compliance gaps and risk exposure.",
-        "Developed Key Risk Indicators (KRIs) and continuous monitoring dashboards for an insurance client, improving real-time oversight of underwriting and claims metrics.",
-        ""
-      ]
-    },
-    {
-      role: "Data Analyst",
-      company: "L S Digital Pvt Limited",
-      companylogo: require("./assets/images/ls.png"),
-      date: "Feb 2021 – Mar 2022",
-      desc: "Served as the first Data Analyst on the Data Solutions team, spearheading the development of marketing intelligence and automation frameworks from the ground up using Python, AWS, and BI tools for multi-channel digital campaigns.",
-      descBullets: [
-        "Built a Python-based proof-of-concept lead scoring model, increasing qualified leads by 10% and improving conversion targeting for the sales team.",
-        "Automated data ingestion pipelines from 20+ marketing sources using AWS (Lambda, S3, Glue), reducing manual effort and enabling real-time dashboarding.",
-        "Developed interactive AWS Quicksight dashboards for performance tracking and insights, eliminating 80+ hours of monthly manual reporting."
-      ]
-    },
-    {
-      role: "Application Development Associate",
-      company: "Accenture",
-      companylogo: require("./assets/images/accenture.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Worked as an Application Development Associate, leveraging Python and SQL to process large datasets and improve reporting efficiency in enterprise data systems.",
-      descBullets: [
-        "Gained Hands on Experience on Python, SQL, HTML, CSS, JavaScript",
-        "Analyzed and processed large datasets using Python, SQL, and HTML to generate actionable insights, improving reporting efficiency by 10% for a client-facing application."
-      ]
-    }
-  ]
-};
+// const workExperiences = {
+//   display: false, //Set it to true to show workExperiences Section
+//   experience: [
+//     {
+//       role: "Graduate Teaching Assistant",
+//       company: "University of Texas at Dallas",
+//       companylogo: require("./assets/images/utd_logo.png"),
+//       date: "Aug 2024 – Present",
+//       desc: "Graduate Teaching Assistant for Predictive Analytics under Proff Shervin Tehrani and AWS Cloud Fundamentals under Proff. Abdul Raheem",
+//       descBullets: [
+//         "Coordinate and communicate important course announcements to ensure timely and effective student communication.",
+//         "Support and mentor students by addressing their questions and clarifying doubts to facilitate a deeper understanding of course concepts.",
+//         "Evaluate, grade, and provide feedback on assignments and exams to help students improve their performance and grasp of the subject matter."
+//       ]
+//     },
+//     {
+//       role: "Jr. Data Scientist",
+//       company: "Grant Thornton",
+//       companylogo: require("./assets/images/gt_logo.png"),
+//       date: "mar 2022 – Aug 2023",
+//       desc: "Worked as a Business Analyst, delivering data-driven audit automation, financial risk analysis, and executive reporting solutions for clients across banking and insurance domains.",
+//       descBullets: [
+//         "Designed and deployed 50+ Power BI dashboards to automate internal audit processes, reducing audit turnaround time by 30% and surfacing $500K in potential financial risks.",
+//         "Led a pre-implementation audit review for a $2B Commercial & Industrial Loan Portfolio’s CECL model, identifying compliance gaps and risk exposure.",
+//         "Developed Key Risk Indicators (KRIs) and continuous monitoring dashboards for an insurance client, improving real-time oversight of underwriting and claims metrics.",
+//         ""
+//       ]
+//     },
+//     {
+//       role: "Data Analyst",
+//       company: "L S Digital Pvt Limited",
+//       companylogo: require("./assets/images/ls.png"),
+//       date: "Feb 2021 – Mar 2022",
+//       desc: "Served as the first Data Analyst on the Data Solutions team, spearheading the development of marketing intelligence and automation frameworks from the ground up using Python, AWS, and BI tools for multi-channel digital campaigns.",
+//       descBullets: [
+//         "Built a Python-based proof-of-concept lead scoring model, increasing qualified leads by 10% and improving conversion targeting for the sales team.",
+//         "Automated data ingestion pipelines from 20+ marketing sources using AWS (Lambda, S3, Glue), reducing manual effort and enabling real-time dashboarding.",
+//         "Developed interactive AWS Quicksight dashboards for performance tracking and insights, eliminating 80+ hours of monthly manual reporting."
+//       ]
+//     },
+//     {
+//       role: "Application Development Associate",
+//       company: "Accenture",
+//       companylogo: require("./assets/images/accenture.png"),
+//       date: "Jan 2015 – Sep 2015",
+//       desc: "Worked as an Application Development Associate, leveraging Python and SQL to process large datasets and improve reporting efficiency in enterprise data systems.",
+//       descBullets: [
+//         "Gained Hands on Experience on Python, SQL, HTML, CSS, JavaScript",
+//         "Analyzed and processed large datasets using Python, SQL, and HTML to generate actionable insights, improving reporting efficiency by 10% for a client-facing application."
+//       ]
+//     }
+//   ]
+// };
 
 //////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -481,6 +481,51 @@ const certificationsSection = {
 };
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Leadership Section
+export const leadershipSection = {
+  title: "Leadership",
+  subtitle: "Roles that reflect my passion for leading and inspiring others.",
+  display: true, // Set to false to hide this section
+  leadershipCards: [
+    {
+      title: "Vice-President, UTD Infinity Lion’s Club",
+      subtitle: "Led service projects and coordinated with 20+ members to organize university-wide volunteering events.",
+      image: "images/leadership/lionsclub.png",
+      imageAlt: "Lions Club Logo",
+      footerLink: [
+        {
+          name: "View Activities",
+          url: "https://www.lionsclubs.org/"
+        }
+      ]
+    },
+    {
+      title: "Sergeant at Arms, UTD Toastmasters",
+      subtitle: "Ensured smooth club operations and helped new members feel welcomed and confident in public speaking.",
+      image: "images/leadership/toastmasters.png",
+      imageAlt: "Toastmasters Logo",
+      footerLink: [
+        {
+          name: "Learn More",
+          url: "https://www.toastmasters.org/"
+        }
+      ]
+    },
+    {
+      title: "President, KIIT Aeronautical Society",
+      subtitle: "Organized aerospace seminars, competitions, and hands-on workshops for over 200 students.",
+      image: "images/leadership/kiit.png",
+      imageAlt: "KIIT Logo",
+      footerLink: [
+        {
+          name: "Our Events",
+          url: "#"
+        }
+      ]
+    }
+  ]
+  
+};
 
 
 
@@ -698,7 +743,7 @@ export {
   skillsSection,
   educationInfo,
   techStack,
-  workExperiences,
+  // workExperiences,
   openSource,
   bigProjects,
   // achievementSection,

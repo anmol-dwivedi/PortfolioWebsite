@@ -1,0 +1,45 @@
+@import "../../_globalColor";
+
+.leadership-heading {
+  font-size: 56px;
+  font-weight: 400;
+  margin: 0px;
+}
+
+.leadership-subtitle {
+  text-transform: uppercase;
+  margin: 0px;
+  margin-bottom: 50px;
+}
+
+.subTitle {
+  color: $subTitle;
+}
+
+.leadership-cards-grid {
+  display: flex;                // ← make it flex
+  flex-direction: row;          // ← horizontal layout
+  overflow-x: auto;             // ← horizontal scrolling if needed
+  gap: 1.5rem;
+  padding: 1rem 0;
+  scroll-snap-type: x mandatory;
+}
+
+.leadership-cards-grid > * {
+  scroll-snap-align: start;
+  flex: 0 0 auto;               // ← prevent shrinking and maintain full card
+  min-width: 350px;             // ← adjust as per your card width
+  max-width: 400px;
+}
+
+@media (max-width: 768px) {
+  .leadership-heading {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .leadership-subtitle {
+    font-size: 16px;
+    text-align: center;
+  }
+}
