@@ -14,7 +14,7 @@ export default function LeadershipSection() {
 
   return (
     <Fade bottom duration={1000} distance="20px">
-      <div className="main" id="leadership-section">
+      <div className="main" id="leadership">
         <div className="leadership-main-div">
           <div className="leadership-header">
             <h1

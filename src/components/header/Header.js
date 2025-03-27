@@ -2,21 +2,10 @@ import React, { useContext } from "react";
 import "./Header.scss";
 import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
 import StyleContext from "../../contexts/StyleContext";
-import {
-  greeting,
-  skillsSection,
-  openSource,
-  projectsSection,
-  resumeSection
-} from "../../portfolio";
+import { greeting } from "../../portfolio";
 
 function Header() {
   const { isDark } = useContext(StyleContext);
-
-  const viewOpenSource = openSource.display;
-  const viewSkills = skillsSection.display;
-  const viewProjects = projectsSection.display;
-  const viewResume = resumeSection.display;
 
   return (
     <header className={isDark ? "dark-menu header" : "header"}>
@@ -34,34 +23,17 @@ function Header() {
         <span className={isDark ? "navicon navicon-dark" : "navicon"}></span>
       </label>
       <ul className={isDark ? "dark-menu menu" : "menu"}>
-        {viewSkills && (
-          <li>
-            <a href="#skills">Skills</a>
-          </li>
-        )}
-        {viewOpenSource && (
-          <li>
-            <a href="#opensource">Open Source</a>
-          </li>
-        )}
-        {viewProjects && (
-          <li>
-            <a href="#projects-section">Projects</a>
-          </li>
-        )}
-        {viewResume && (
-          <li>
-            <a href="#resume">Resume</a>
-          </li>
-        )}
-        <li>
-          <a href="#contact">Contact Me</a>
-        </li>
+        <li><a href="#greeting">About</a></li>
+        <li><a href="#projects-section">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Work Experience</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#leadership">Leadership</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#contact">Contact Me</a></li>
         <li>
           {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-          <a>
-            <ToggleSwitch />
-          </a>
+          <a><ToggleSwitch /></a>
         </li>
       </ul>
     </header>

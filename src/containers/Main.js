@@ -71,6 +71,7 @@ const Main = () => {
             <TimelineExperience />    {/* # moved the work ex timline afte the education */}           
             {/* <Projects /> */}
             <CertificationsSection />
+            <LeadershipSection />
             <AchievementsSection />
             {/* <WorkExperience />         this is the old work experience and I need to convert this into the extra curriculars section */}
             {/* <StartupProject /> */}
@@ -78,7 +79,7 @@ const Main = () => {
             {/*<Talks />          # not needed in the curent portfolio */}
             {/* <Twitter />       # not needed in the current portfolio*/}
             {/* <Podcast />       # not needed in the current portfolio*/}
-            <LeadershipSection />
+            
             <Profile />
             <Footer />
             <ScrollToTopButton />

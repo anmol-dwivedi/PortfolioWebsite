@@ -14,7 +14,7 @@ export default function CertificationsSection() {
 
   return (
     <Fade bottom duration={1000} distance="20px">
-      <div className="main" id="certifications-section">
+      <div className="main" id="certifications">
         <div className="certifications-main-div">
           <div className="certifications-header">
             <h1

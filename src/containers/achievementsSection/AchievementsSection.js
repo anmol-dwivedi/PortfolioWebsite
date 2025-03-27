@@ -14,7 +14,7 @@ export default function AchievementsSection() {
 
   return (
     <Fade bottom duration={1000} distance="20px">
-      <div className="main" id="achievements-section">
+      <div className="main" id="achievements">
         <div className="achievements-main-div">
           <div className="achievements-header">
             <h1

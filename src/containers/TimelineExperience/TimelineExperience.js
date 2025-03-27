@@ -3,11 +3,11 @@ import "./TimelineExperience.scss";
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { timelineExperience } from "../../portfolio";
-import { MdWork } from "react-icons/md";
+// import { MdWork } from "react-icons/md";
 
 const TimelineExperience = () => {
   return (
-    <div className="timeline-container" id="timeline-experience">
+    <div className="timeline-container" id="experience">
       <h1 className="timeline-title">Experience</h1>
       <VerticalTimeline>
         {timelineExperience.map((item, index) => (
