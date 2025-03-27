@@ -66,10 +66,10 @@ const Main = () => {
             <Greeting />
             <Skills />
             {/* <StackProgress />  */}
+            <ProjectsSection />
             <Education />
             <TimelineExperience />    {/* # moved the work ex timline afte the education */}           
             {/* <Projects /> */}
-            <ProjectsSection />
             <CertificationsSection />
             <AchievementsSection />
             {/* <WorkExperience />         this is the old work experience and I need to convert this into the extra curriculars section */}

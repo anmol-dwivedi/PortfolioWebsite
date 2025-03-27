@@ -6,6 +6,7 @@
   margin: 0px auto;
   margin-top: 4rem;
 }
+
 .greet-main {
   width: 90%;
   padding: 20px 10px;
@@ -15,7 +16,7 @@
 
 .profile-image {
   width: 100%;
-  max-width: 100px; // 👈 Adjust this to your desired size (e.g., 250px, 350px)
+  max-width: 100px;
   border-radius: 20px;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
 }
@@ -26,10 +27,6 @@
 
 .subTitle {
   color: $subTitle !important;
-}
-
-.greeting-main {
-  display: flex;
 }
 
 .greeting-main > * {
@@ -45,6 +42,7 @@
   display: flex;
   margin-top: 40px;
 }
+
 .download-link-button {
   text-decoration: none;
 }
@@ -58,6 +56,18 @@
 .greeting-text-p {
   font-size: 30px;
   line-height: 40px;
+}
+
+.greeting-bullet {
+  font-size: 18px;
+  margin-top: 10px;
+  line-height: 1.6;
+  color: $subTitle;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+    text-align: center;
+  }
 }
 
 .greeting-image-div > img {
@@ -106,6 +116,7 @@
     font-size: 20px;
   }
 }
+
 @media (max-width: 768px) {
   .button-greeting-div {
     justify-content: space-around;

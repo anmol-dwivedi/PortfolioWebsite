@@ -45,6 +45,7 @@ const socialMediaLinks = {
   gmail: "dwivedi.anmol1996@gmail.com",
   instagram: "https://www.instagram.com/anmoldwivedi1996/",
   facebook: "https://www.facebook.com/anmol.dwivedi.39/",
+  youtube: "https://www.youtube.com/@anmoldwivedi7205",
   // kaggle:
   // medium: "", // not provided
   // stackoverflow: "", // not provided
