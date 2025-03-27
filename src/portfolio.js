@@ -5,6 +5,11 @@
 import emoji from "react-easy-emoji";
 import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
 
+
+import lionsClubImage from "./assets/images/IMG-20231014-WA0039.jpg";
+import toastmastersImage from "./assets/images/TM_Conference.png";
+import kiitImage from "./assets/images/IMG_20180406_114356872_HDR.jpg";
+
 // Splash Screen
 
 const splashScreen = {
@@ -485,48 +490,31 @@ const certificationsSection = {
 export const leadershipSection = {
   title: "Leadership 🎯",
   subtitle: "Roles that reflect my passion for leading and inspiring others.",
-  display: true, // Set to false to hide this section
+  display: true,
   leadershipCards: [
     {
       title: "Vice-President, UTD Infinity Lion’s Club",
-      subtitle: "Led service projects and coordinated with 20+ members to organize university-wide volunteering events.",
-      image: "images/leadership/lionsclub.png",
-      imageAlt: "Lions Club Logo",
-      footerLink: [
-        {
-          name: "View Activities",
-          url: "https://www.lionsclubs.org/"
-        }
-      ]
+      subtitle:
+        "As Vice-President, I led high-impact volunteer initiatives focused on sustainability and community welfare. I organized the Plano International Festival in 2023 and 2024, managing 30+ volunteers and reducing landfill waste by 94% through strategic recycling efforts. I also spearheaded fundraisers like car washes and the annual club banquet, raising $3,000+ for NGO Chetna to support domestic violence victims. Additionally, I led recurring volunteer events with “Feed My Starving Children” and collaborated with university teams to expand service opportunities for club members.",
+      image: lionsClubImage,
+      imageAlt: "Lions Club Logo"
     },
     {
       title: "Sergeant at Arms, UTD Toastmasters",
-      subtitle: "Ensured smooth club operations and helped new members feel welcomed and confident in public speaking.",
-      image: "images/leadership/toastmasters.png",
-      imageAlt: "Toastmasters Logo",
-      footerLink: [
-        {
-          name: "Learn More",
-          url: "https://www.toastmasters.org/"
-        }
-      ]
+      subtitle:
+        "As Sergeant at Arms, I handled the logistics for our weekly meetings — setting up the venue, managing club resources, and creating a welcoming environment for all attendees. I actively mentored new members to build confidence in public speaking while improving my own delivery through prepared speeches, impromptu rounds, and leadership roles during sessions. This experience helped me grow both personally and professionally.",
+      image: toastmastersImage,
+      imageAlt: "Toastmasters Logo"
     },
     {
       title: "President, KIIT Aeronautical Society",
-      subtitle: "Organized aerospace seminars, competitions, and hands-on workshops for over 200 students.",
-      image: "images/leadership/kiit.png",
-      imageAlt: "KIIT Logo",
-      footerLink: [
-        {
-          name: "Our Events",
-          url: "#"
-        }
-      ]
+      subtitle:
+        "I served as the Head Designer and President (2016–2018), leading the club’s academic and project-based activities. I conducted training on CAD design and aeronautical principles for over 200 students and represented the club in multiple national competitions. I led a team of 7 to SAE’s National Aerodesign Challenge, where we secured 3rd place in the Innovation category. I was responsible for aircraft modeling, ANSYS simulations, and coordinating all operational and design aspects of the club.",
+      image: kiitImage,
+      imageAlt: "KIIT Logo"
     }
   ]
-  
 };
-
 
 
 

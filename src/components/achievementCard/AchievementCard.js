@@ -9,8 +9,8 @@ export default function AchievementCard({ cardInfo, isDark }) {
       console.log(`URL for ${name} not found`);
       return;
     }
-    var win = window.open(url, "_blank");
-    win.focus();
+    const win = window.open(url, "_blank");
+    win?.focus();
   }
 
   return (
@@ -36,19 +36,23 @@ export default function AchievementCard({ cardInfo, isDark }) {
           {cardInfo.description}
         </p>
       </div>
-      <div className="certificate-card-footer">
-        {cardInfo.footer.map((v, i) => (
-          <span
-            key={i}
-            className={
-              isDark ? "dark-mode certificate-tag" : "certificate-tag"
-            }
-            onClick={() => openUrlInNewTab(v.url, v.name)}
-          >
-            {v.name}
-          </span>
-        ))}
-      </div>
+
+      {/* Only render footer if footer links are provided */}
+      {cardInfo.footer && cardInfo.footer.length > 0 && (
+        <div className="certificate-card-footer">
+          {cardInfo.footer.map((v, i) => (
+            <span
+              key={i}
+              className={
+                isDark ? "dark-mode certificate-tag" : "certificate-tag"
+              }
+              onClick={() => openUrlInNewTab(v.url, v.name)}
+            >
+              {v.name}
+            </span>
+          ))}
+        </div>
+      )}
     </div>
   );
 }
