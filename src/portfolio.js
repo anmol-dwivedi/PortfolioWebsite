@@ -496,7 +496,7 @@ export const leadershipSection = {
     {
       title: "Vice-President, UTD Infinity Lion’s Club",
       subtitle:
-        "As Vice-President, I led high-impact volunteer initiatives focused on sustainability and community welfare. I organized the Plano International Festival in 2023 and 2024, managing 30+ volunteers and reducing landfill waste by 94% through strategic recycling efforts. I also spearheaded fundraisers like car washes and the annual club banquet, raising $3,000+ for NGO Chetna to support domestic violence victims. Additionally, I led recurring volunteer events with “Feed My Starving Children” and collaborated with university teams to expand service opportunities for club members.",
+        "Served as Vice-President of UTD Infinity Lion’s Club, representing the organization in leading sustainability initiatives such as the Plano International Festival (2023–24), where 30+ volunteers were mobilized to reduce landfill waste by 94%. Spearheaded fundraisers raising $3,000+ for NGO Chetna and organized recurring service events with “Feed My Starving Children,” expanding outreach through campus-wide collaborations.",
       image: lionsClubImage,
       imageAlt: "Lions Club Logo"
     },
