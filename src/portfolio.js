@@ -6,9 +6,9 @@ import emoji from "react-easy-emoji";
 import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
 
 
-import lionsClubImage from "./assets/images/IMG-20231014-WA0039.jpg";
+import lionsClubImage from "./assets/images/IMG-20231014-WA0039.png";
 import toastmastersImage from "./assets/images/TM_Conference.png";
-import kiitImage from "./assets/images/IMG_20180406_114356872_HDR.jpg";
+import kiitImage from "./assets/images/IMG_20180406_114356872_HDR.png";
 
 // Splash Screen
 

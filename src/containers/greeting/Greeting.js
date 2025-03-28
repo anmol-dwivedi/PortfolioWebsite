@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { Fade } from "react-reveal";
 import emoji from "react-easy-emoji";
 import "./Greeting.scss";
-import profileImage from "../../assets/images/Landing_Page_Pic/WhatsApp Image 2025-03-27 at 5.38.17 AM.jpeg";
+import profileImage from "../../assets/images/langind_page_image.png";
 
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
