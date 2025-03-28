@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/PortfolioWebsite/static/css/main.cf9e7012.css",
-    "main.js": "/PortfolioWebsite/static/js/main.3eb70df7.js",
+    "main.css": "/PortfolioWebsite/static/css/main.cb937ce4.css",
+    "main.js": "/PortfolioWebsite/static/js/main.2e329812.js",
     "static/css/769.b3cbb36b.chunk.css": "/PortfolioWebsite/static/css/769.b3cbb36b.chunk.css",
     "static/js/769.0a336181.chunk.js": "/PortfolioWebsite/static/js/769.0a336181.chunk.js",
     "static/media/TM_Conference.png": "/PortfolioWebsite/static/media/TM_Conference.7d88f1947c759939b727.png",
     "static/media/IMG_20180406_114356872_HDR.jpg": "/PortfolioWebsite/static/media/IMG_20180406_114356872_HDR.3a0cc6bc5b72703f0395.jpg",
-    "static/media/anmol_landing_page.jpeg": "/PortfolioWebsite/static/media/anmol_landing_page.c438fe95784685969634.jpeg",
+    "static/media/WhatsApp Image 2025-03-27 at 5.38.17 AM.jpeg": "/PortfolioWebsite/static/media/WhatsApp Image 2025-03-27 at 5.38.17 AM.2d5376ea82aed17be70e.jpeg",
     "static/media/toastmasters.png": "/PortfolioWebsite/static/media/toastmasters.0ce9a02ab4e5edf396cb.png",
     "static/media/IMG-20231014-WA0039.jpg": "/PortfolioWebsite/static/media/IMG-20231014-WA0039.abcf24964fbad307bf44.jpg",
     "static/media/Montserrat-Regular.ttf": "/PortfolioWebsite/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
@@ -14,7 +14,6 @@
     "static/media/utd_logo.png": "/PortfolioWebsite/static/media/utd_logo.fcf9cf08bb06afb6374c.png",
     "static/media/aws-cert.png": "/PortfolioWebsite/static/media/aws-cert.dc8628f6b81887380f95.png",
     "static/media/contactMailDark.svg": "/PortfolioWebsite/static/media/contactMailDark.1db650d351729a0f17b4e3104e6a7b7a.svg",
-    "static/media/developerActivity.svg": "/PortfolioWebsite/static/media/developerActivity.2c0445cae86f4243433a2f5a22b2c031.svg",
     "static/media/googleAssistantLogo.webp": "/PortfolioWebsite/static/media/googleAssistantLogo.f720c71652579588524a.webp",
     "static/media/accenture.png": "/PortfolioWebsite/static/media/accenture.eb4bf874c9b7fcd51019.png",
     "static/media/KIIT-Logo.png": "/PortfolioWebsite/static/media/KIIT-Logo.1fa9ac14f765f86d764e.png",
@@ -25,13 +24,13 @@
     "static/media/saayaHealthLogo.webp": "/PortfolioWebsite/static/media/saayaHealthLogo.60b27d1f184fadfce43a.webp",
     "static/media/nextuLogo.webp": "/PortfolioWebsite/static/media/nextuLogo.e033dbfa4c58c0a906aa.webp",
     "index.html": "/PortfolioWebsite/index.html",
-    "main.cf9e7012.css.map": "/PortfolioWebsite/static/css/main.cf9e7012.css.map",
-    "main.3eb70df7.js.map": "/PortfolioWebsite/static/js/main.3eb70df7.js.map",
+    "main.cb937ce4.css.map": "/PortfolioWebsite/static/css/main.cb937ce4.css.map",
+    "main.2e329812.js.map": "/PortfolioWebsite/static/js/main.2e329812.js.map",
     "769.b3cbb36b.chunk.css.map": "/PortfolioWebsite/static/css/769.b3cbb36b.chunk.css.map",
     "769.0a336181.chunk.js.map": "/PortfolioWebsite/static/js/769.0a336181.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cf9e7012.css",
-    "static/js/main.3eb70df7.js"
+    "static/css/main.cb937ce4.css",
+    "static/js/main.2e329812.js"
   ]
 }
