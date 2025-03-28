@@ -1,16 +1,29 @@
 @import "~react-vertical-timeline-component/style.min.css";
+@import "../../_globalColor";
 
-.timeline-container {
-  padding: 40px 20px;
-  background-color: #0a192f; // matches your dark theme
+.timeline-main-div {
+  width: 100%;
 }
 
-.timeline-title {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #64ffda;
-  text-align: center;
-  margin-bottom: 40px;
+.timeline-header {
+  margin-bottom: 50px;
+}
+
+.timeline-heading {
+  font-size: 56px;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0px;
+}
+
+.timeline-subtitle {
+  text-transform: uppercase;
+  margin: 0px;
+  margin-bottom: 50px;
+}
+
+.subTitle {
+  color: $subTitle;
 }
 
 .timeline-logo {
@@ -22,30 +35,39 @@
   background-color: white;
 }
 
-.timeline-date {
-  font-size: 1.4rem !important; // FORCE the size
-  font-weight: 700 !important;
-  color: inherit !important;
-  text-align: center !important;
-  width: 100%;
-  display: flex;
-  justify-content: center;
+.timeline-summary {
+  font-size: 1.6rem;
+  font-style: italic;
+  font-weight: 700;
+  color: #888ea1;
+  margin: 12px 0;
+  line-height: 1.5;
 }
 
 .vertical-timeline-element-date {
   font-size: 1.6rem !important;
   font-weight: 700 !important;
   text-align: center !important;
-  color: #f0f0f0 !important; // or inherit if you want to keep the theme color
+  color: inherit !important;
   display: flex;
   justify-content: center;
 }
 
-.timeline-summary {
-  font-size: 1.6rem;
-  font-style: italic;         // increased size
-  font-weight: 700;          // slightly stronger weight
-  color: #888ea1;            // neutral tone that works on both dark/light
-  margin: 12px 0;
-  line-height: 1.5;
+@media (max-width: 1380px) {
+  .timeline-heading {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .timeline-heading {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .timeline-subtitle {
+    font-size: 16px;
+    line-height: normal;
+    text-align: center;
+  }
 }

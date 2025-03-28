@@ -1,61 +1,77 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./TimelineExperience.scss";
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { timelineExperience } from "../../portfolio";
-// import { MdWork } from "react-icons/md";
+import { Fade } from "react-reveal";
+import StyleContext from "../../contexts/StyleContext";
 
 const TimelineExperience = () => {
+  const { isDark } = useContext(StyleContext);
+
   return (
-    <div className="timeline-container" id="experience">
-      <h1 className="timeline-title">Experience</h1>
-      <VerticalTimeline>
-        {timelineExperience.map((item, index) => (
-          <VerticalTimelineElement
-          key={index}
-          contentStyle={{ background: "#1f1f1f", color: "#fff" }}
-          contentArrowStyle={{ borderRight: "7px solid #23283e" }}
-          date={item.date}
-          dateClassName="timeline-date"
-          iconStyle={{
-            background: "#ffffff",
-            width: "70px",
-            height: "70px",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            boxShadow: "0 0 0 4px #00bfff",
-            padding: "1px"
-          }}
-          icon={
-            <img
-              src={item.icon}
-              alt={item.company}
-              className="timeline-logo"
-            />
-          }
-        >
-          <h3 className="vertical-timeline-element-title">{item.title}</h3>
-<h4 className="vertical-timeline-element-subtitle">
-  {item.company} – {item.location}
-</h4>
+    <Fade bottom duration={1000} distance="20px">
+      <div className="main" id="experience">
+        <div className="timeline-main-div">
+          <div className="timeline-header">
+            <h1 className={isDark ? "dark-mode heading timeline-heading" : "heading timeline-heading"}>
+              Experience 💼
+            </h1>
+            <p className={isDark ? "dark-mode subTitle timeline-subtitle" : "subTitle timeline-subtitle"}>
+              Roles I have held across industries and institutions
+            </p>
+          </div>
 
-{item.summary && (
-  <p className="timeline-summary">{item.summary}</p>
-)}
+          <VerticalTimeline>
+            {timelineExperience.map((item, index) => (
+              <VerticalTimelineElement
+                key={index}
+                contentStyle={{
+                  background: isDark ? "#23283e" : "#f5f5f5",
+                  color: isDark ? "#fff" : "#000"
+                }}
+                contentArrowStyle={{
+                  borderRight: isDark ? "7px solid #23283e" : "7px solid #f5f5f5"
+                }}
+                date={item.date}
+                iconStyle={{
+                  background: "#ffffff",
+                  width: "70px",
+                  height: "70px",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  boxShadow: "0 0 0 4px #00bfff",
+                  padding: "1px"
+                }}
+                icon={
+                  <img
+                    src={item.icon}
+                    alt={item.company}
+                    className="timeline-logo"
+                  />
+                }
+              >
+                <h3 className="vertical-timeline-element-title">{item.title}</h3>
+                <h4 className="vertical-timeline-element-subtitle">
+                  {item.company} – {item.location}
+                </h4>
 
-<ul>
-  {item.description.map((point, i) => (
-    <li key={i}>{point}</li>
-  ))}
-</ul>
+                {item.summary && (
+                  <p className="timeline-summary">{item.summary}</p>
+                )}
 
-
-        </VerticalTimelineElement>
-        
-        ))}
-      </VerticalTimeline>
-    </div>
+                <ul>
+                  {item.description.map((point, i) => (
+                    <li key={i}>{point}</li>
+                  ))}
+                </ul>
+              </VerticalTimelineElement>
+            ))}
+          </VerticalTimeline>
+        </div>
+      </div>
+    </Fade>
   );
 };
 
