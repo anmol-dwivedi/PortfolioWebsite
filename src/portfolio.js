@@ -332,7 +332,7 @@ const bigProjects = {
 // Include certificates, talks etc
 
 const projectsSection = {
-  title: emoji("Projects 🏆 "),
+  title: emoji("Projects 🛠️ "),
   subtitle:
     "Some Cool Projects that I have worked on !",
 
@@ -340,7 +340,7 @@ const projectsSection = {
     {
       title: "Project 1",
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
+        "First Indian to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
       image: require("./assets/images/codeInLogo.webp"),
       imageAlt: "Google Code-In Logo",
       footerLink: [
@@ -523,7 +523,7 @@ export const leadershipSection = {
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Achievement Section
 const achievementsSection = {
-  title: emoji("Achievements 🎉"),
+  title: emoji("Highlights and Achievements ✨"),
   subtitle: "Celebrating memorable moments and extracurricular wins",
   achievementsCards: [
     {
