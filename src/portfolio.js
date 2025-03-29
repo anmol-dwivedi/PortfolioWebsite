@@ -160,7 +160,7 @@ https://fontawesome.com/icons?d=gallery */
 // Education Section
 
 const educationInfo = {
-  display: true, // Set false to hide this section, defaults to true
+  display: true,
   schools: [
     {
       schoolName: "University of Texas at Dallas",
@@ -173,6 +173,17 @@ const educationInfo = {
         "Selected as a Dean’s Excellence Scholar and appointed as a Graduate Teaching Assistant for Predictive Analytics and AWS Cloud Fundamentals, mentoring students and supporting certification prep.",
         "Held leadership roles including Vice President of Infinity Lion’s Club and Sergeant at Arms, UTD Toastmasters, and actively engaged in Envision Data Storytelling Club and the I-Friend Program.",
         "Applied advanced analytics and AI techniques through hands-on projects in predictive modeling, neural networks, and LLM-based NLP pipelines using Python, R, PyTorch, TensorFlow, and MLflow."
+      ],
+      footerLinks: [
+        // Uncomment when degree is ready
+        // {
+        //   name: "View Degree",
+        //   url: require("./assets/Education Docs/UTD_Degree.pdf")
+        // },
+        {
+          name: "View Transcript",
+          url: require("./assets/Education Docs/UTD_Unofficial_Transcript.pdf")
+        }
       ]
     },
     {
@@ -186,6 +197,16 @@ const educationInfo = {
         "Developed strong expertise in data manipulation, wrangling, and analysis using Python (Pandas, NumPy) and SQL, working with large, messy datasets in graded assignments and real-world case studies.",
         "Ranked Top 10 in a national-level hackathon for predicting restaurant turnover using regression modeling, data wrangling, and advanced feature engineering techniques.",
         "Applied data mining and machine learning algorithms (regression, classification, clustering) across multiple projects, including a Customer Churn Prediction capstone using feature engineering, model tuning, and cross-validation."
+      ],
+      footerLinks: [
+        {
+          name: "View Degree",
+          url: require("./assets/Education Docs/GL_Merged.pdf")
+        },
+        {
+          name: "View Transcript",
+          url: require("./assets/Education Docs/PGP DSBA Transcript.pdf")
+        }
       ]
     },
     {
@@ -197,10 +218,22 @@ const educationInfo = {
       descBullets: [
         "Designed and simulated complex mechanical components using tools like AutoCAD, CATIA, Ansys, and SolidWorks for academic projects focused on aerodynamics and propulsion systems.President at KIIT Aeronautical Society",
         "Led the KIIT Aeronautical Society as President, organizing 10+ technical workshops and competitions in aeromodelling, CFD, and propulsion design; boosted student engagement in core mechanical domains by 40%."
+      ],
+      footerLinks: [
+        {
+          name: "View Degree",
+          url: require("./assets/Education Docs/KIIT btech Degree.pdf")
+        },
+        {
+          name: "View Transcript",
+          url: require("./assets/Education Docs/KIIT Final Grade Card - Transcript.pdf")
+        }
       ]
     }
   ]
 };
+
+
 
 //////////////////////////////////////////////////////////////////////////////////////////////
 

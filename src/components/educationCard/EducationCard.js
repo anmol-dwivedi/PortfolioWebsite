@@ -1,12 +1,12 @@
-import React, {createRef, useContext} from "react";
-import {Fade, Slide} from "react-reveal";
+import React, { createRef, useContext } from "react";
+import { Fade, Slide } from "react-reveal";
 import "./EducationCard.scss";
 import StyleContext from "../../contexts/StyleContext";
 
-export default function EducationCard({school}) {
+export default function EducationCard({ school }) {
   const imgRef = createRef();
 
-  const GetDescBullets = ({descBullets}) => {
+  const GetDescBullets = ({ descBullets }) => {
     return descBullets
       ? descBullets.map((item, i) => (
           <li key={i} className="subTitle">
@@ -15,10 +15,12 @@ export default function EducationCard({school}) {
         ))
       : null;
   };
-  const {isDark} = useContext(StyleContext);
+
+  const { isDark } = useContext(StyleContext);
 
   if (!school.logo)
     console.error(`Image of ${school.name} is missing in education section`);
+
   return (
     <div>
       <Fade left duration={1000}>
@@ -60,6 +62,23 @@ export default function EducationCard({school}) {
                   <GetDescBullets descBullets={school.descBullets} />
                 </ul>
               </div>
+
+              {/* View Degree & Transcript Buttons */}
+              {school.footerLinks && (
+                <div className="edu-btn-group">
+                  {school.footerLinks.map((link, idx) => (
+                    <a
+                      key={idx}
+                      className="main-button edu-btn"
+                      href={link.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {link.name}
+                    </a>
+                  ))}
+                </div>
+              )}
             </div>
           </div>
         </div>

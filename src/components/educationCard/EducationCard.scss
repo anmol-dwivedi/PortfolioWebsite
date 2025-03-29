@@ -8,9 +8,6 @@
 .education-card:hover + .education-card-border {
   border-color: $educationCardBorder;
   width: 100%;
-  -webkit-transition: width 0.6s ease-in-out;
-  -moz-transition: width 0.6s ease-in-out;
-  -o-transition: width 0.6s ease-in-out;
   transition: width 0.6s ease-in-out;
 }
 
@@ -19,9 +16,6 @@
   width: 80%;
   border-top: 2px solid $lightBorder1;
   margin-bottom: 20px;
-  -webkit-transition: width 0.6s ease-in-out;
-  -moz-transition: width 0.6s ease-in-out;
-  -o-transition: width 0.6s ease-in-out;
   transition: width 0.6s ease-in-out;
 }
 
@@ -78,8 +72,24 @@
   margin-top: 0.5rem;
 }
 
-/* Media Query */
+/* Button group for degree/transcript */
+.edu-btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
 
+.edu-btn {
+  margin-top: 0px !important;
+  margin-right: 0px !important;
+  font-size: 0.875rem;
+  padding: 10px 20px;
+  text-transform: none;
+}
+
+/* Media Queries */
 @media (max-width: 1380px) {
   .education-card {
     flex-direction: column;
