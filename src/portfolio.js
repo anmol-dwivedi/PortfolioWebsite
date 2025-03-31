@@ -371,111 +371,78 @@ const projectsSection = {
 
   achievementsCards: [
     {
-      title: "Project 1",
-      subtitle:
-        "First Indian to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
+      title: "Customer Churn Prediction",
+      subtitle: "Built a classification model to predict customer churn using logistic regression, achieving 82% accuracy.",
+      image: require("./assets/images/saayaHealthLogo.webp"),
+      imageAlt: "Customer Churn Project",
       footerLink: [
-        {
-          name: "GitHub Code",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Live Demo",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        // {
-        //   name: "Google Code-in Blog",
-        //   url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        // }
-      ]
+        { name: "GitHub Code", url: "#" },
+        { name: "Live Demo", url: "#" }
+      ],
+      category: ["Machine Learning"],
+      // technologies: ["Python", "Scikit-Learn", "Pandas"]
     },
     {
-      title: "Project 2",
-      subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
+      title: "Media Mix Modeling",
+      subtitle: "Developed a regression-based marketing mix model using FastAPI and Scipy for GMV prediction.",
+      image: require("./assets/images/saayaHealthLogo.webp"),
+      imageAlt: "Media Mix Project",
       footerLink: [
-        {
-          name: "GitHub Code",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Live Demo",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        }
-      ]
+        { name: "GitHub Code", url: "#" },
+        { name: "Live Demo", url: "#" }
+      ],
+      category: ["Deep Learning"],
+      // technologies: ["Python", "Scipy", "FastAPI", "MLflow"]
     },
-
     {
-      title: "Project 3",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
+      title: "Wine Sale Forecasting",
+      subtitle: "Used time series modeling to forecast wine sales and seasonal trends.",
+      image: require("./assets/images/saayaHealthLogo.webp"),
+      imageAlt: "Wine Sales Prediction",
       footerLink: [
-        {
-          name: "GitHub Code",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Live Demo",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        }
-      ]
+        { name: "GitHub Code", url: "#" },
+        { name: "Live Demo", url: "#" }
+      ],
+      category: ["Data Analytics"],
+      // technologies: ["Python", "Prophet", "Pandas"]
     },
-
     {
-      title: "project 4",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
+      title: "Food Vision",
+      subtitle: "Built a deep learning CNN with TensorFlow to classify food images into 100+ categories.",
+      image: require("./assets/images/saayaHealthLogo.webp"),
+      imageAlt: "Food Vision",
       footerLink: [
-        {
-          name: "GitHub Code",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Live Demo",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        }
-      ]
+        { name: "GitHub Code", url: "#" },
+        { name: "Live Demo", url: "#" }
+      ],
+      category: ["Deep Learning"],
+      // technologies: ["TensorFlow", "CNN", "Python"]
     },
-
     {
-      title: "Project 5",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
+      title: "Emotion Prediction",
+      subtitle: "Created an NLP model using PyTorch to predict emotions from text messages.",
+      image: require("./assets/images/saayaHealthLogo.webp"),
+      imageAlt: "Emotion Prediction",
       footerLink: [
-        {
-          name: "GitHub Code",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Live Demo",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        }
-      ]
+        { name: "GitHub Code", url: "#" },
+        { name: "Live Demo", url: "#" }
+      ],
+      category: ["Deep Learning"],
+      // technologies: ["PyTorch", "Transformers", "Python"]
     },
-
     {
-      title: "Project 6",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
+      title: "Interactive Sales Dashboard",
+      subtitle: "Developed a Power BI dashboard to visualize KPIs, sales trends, and region-wise performance.",
+      image: require("./assets/images/saayaHealthLogo.webp"),
+      imageAlt: "Dashboard Project",
       footerLink: [
-        {
-          name: "GitHub Code",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Live Demo",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        }
-      ]
+        { name: "GitHub Code", url: "#" },
+        { name: "Live Demo", url: "#" }
+      ],
+      category: ["Data Analytics"],
+      // technologies: ["Power BI", "DAX", "SQL"]
     }
+    
   ],
   display: true // Set false to hide this section, defaults to true
 };

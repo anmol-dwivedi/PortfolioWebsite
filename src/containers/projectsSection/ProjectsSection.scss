@@ -42,3 +42,45 @@
     text-align: center;
   }
 }
+
+/* 🔹 FILTER CHIP CONTAINER */
+.filter-chips {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  justify-content: center;
+}
+
+/* 🔹 FILTER CHIP BUTTON STYLE (reusing Button component) */
+.filter-chip-button {
+  display: inline-block;
+  margin: 0.3rem;
+
+  .main-button {
+    background-color: $buttonColor;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-size: 0.875rem;
+    text-transform: none;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    margin: 0;
+
+    &:hover {
+      background-color: $darkBoxShadow2;
+      color: $buttonColor;
+      transform: scale(1.05);
+    }
+  }
+
+  &.active {
+    .main-button {
+      background-color: #007bff;
+      color: white;
+    }
+  }
+}
+
+/* 🔸 Clean-up: Removed filter-toggle-button, toggle-filter-btn, clear-filters-button, clear-filter-btn */
