@@ -30,8 +30,7 @@ const greeting = {
   subTitle: emoji(
     "A passionate Data Scientist 📊 with experience in building data-driven solutions, predictive models, and interactive dashboards using Python, SQL, Power BI, and cloud platforms like AWS ☁️. Always curious, always learning!"
   ),
-  resumeLink:
-    "https://drive.google.com/file/d/1TVsSlA0dXkRQEvS5-jgKeRYHY4qshL7X/view?usp=sharing", // Set to empty to hide the button
+  resumeLink: process.env.PUBLIC_URL + "/Anmol_Resume_Full_Time_Data_Scientist.pdf", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
