@@ -303,7 +303,7 @@ const bigProjects = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Achievement Section
@@ -318,11 +318,11 @@ const projectsSection = {
     {
       title: "Customer Churn Prediction",
       subtitle: "Built a classification model to predict customer churn using logistic regression, achieving 82% accuracy.",
-      image: require("./assets/images/saayaHealthLogo.webp"),
+      image: require("./assets/Project_Thumbnails/5.-Customer-churn-article.jpg"),
       imageAlt: "Customer Churn Project",
       footerLink: [
-        { name: "GitHub Code", url: "#" },
-        { name: "Live Demo", url: "#" }
+        { name: "GitHub Code", url: "https://github.com/anmol-dwivedi/Ecommerce_Customer_Churn" },
+        { name: "Live Demo", url: "https://ecommercecustomerchurn-jcdaayd4gbbatcnsnyussf.streamlit.app/" }
       ],
       category: ["Machine Learning"],
       // technologies: ["Python", "Scikit-Learn", "Pandas"]
@@ -375,18 +375,18 @@ const projectsSection = {
       category: ["Deep Learning"],
       // technologies: ["PyTorch", "Transformers", "Python"]
     },
-    {
-      title: "Interactive Sales Dashboard",
-      subtitle: "Developed a Power BI dashboard to visualize KPIs, sales trends, and region-wise performance.",
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      imageAlt: "Dashboard Project",
-      footerLink: [
-        { name: "GitHub Code", url: "#" },
-        { name: "Live Demo", url: "#" }
-      ],
-      category: ["Data Analytics"],
-      // technologies: ["Power BI", "DAX", "SQL"]
-    }
+    // {
+    //   title: "Interactive Sales Dashboard",
+    //   subtitle: "Developed a Power BI dashboard to visualize KPIs, sales trends, and region-wise performance.",
+    //   image: require("./assets/images/saayaHealthLogo.webp"),
+    //   imageAlt: "Dashboard Project",
+    //   footerLink: [
+    //     { name: "GitHub Code", url: "#" },
+    //     { name: "Live Demo", url: "#" }
+    //   ],
+    //   category: ["Data Analytics"],
+    //   // technologies: ["Power BI", "DAX", "SQL"]
+    // }
     
   ],
   display: true // Set false to hide this section, defaults to true
@@ -401,32 +401,52 @@ const certificationsSection = {
   achievementsCards: [
     {
       title: "AWS Cloud Practitioner",
-      subtitle: "Earned after completing AWS fundamentals and passing the exam.",
-      image: require("./assets/images/aws-cert.png"),
+      subtitle: "Earned after successfully completing AWS Cloud Fundamentals Exam.",
+      image: require("./assets/Certificates/aws-certified-cloud-practitioner.png"),
       imageAlt: "AWS Certification",
       footerLink: [
-        { name: "View Credential", url: "https://..." }
+        { name: "View Credential", url: "https://www.credly.com/badges/bd95057e-bb44-4957-b584-2c2332da06fd" }
+      ]
+    },
+    {
+      title: "UTD High Distinction Scholar",
+      subtitle: "Earned for Maintaining High GPA (3.96) throughout the MS Program",
+      image: require("./assets/Certificates/UTD_Scholar.jpg"),
+      imageAlt: "Power BI Certificate",
+      footerLink: [
+        {
+          name: "View Credential",
+          url: "https://drive.google.com/file/d/1NL5q11WfWqGwYuUFEwoybfWZGW8mmQEc/view?usp=sharing"
+        }
       ]
     },
     // Add more certs...
     {
-      title: "AWS Cloud Practitioner",
-      subtitle: "Earned after completing AWS fundamentals and passing the exam.",
-      image: require("./assets/images/aws-cert.png"),
-      imageAlt: "AWS Certification",
+      title: "Udemy - Power BI",
+      subtitle: "Earned after completing Power BI Course on Udemy",
+      image: require("./assets/Certificates/PowerBI.jpg"),
+      imageAlt: "Power BI Certificate",
       footerLink: [
-        { name: "View Credential", url: "https://..." }
+        {
+          name: "View Credential",
+          url: "https://drive.google.com/file/d/167BwrEWqUbvUk6ULB3MPIm08Lf-Eff5P/view?usp=sharing"
+        }
       ]
     },
     {
-      title: "AWS Cloud Practitioner",
-      subtitle: "Earned after completing AWS fundamentals and passing the exam.",
-      image: require("./assets/images/aws-cert.png"),
-      imageAlt: "AWS Certification",
+      title: "Udemy - SQL",
+      subtitle: "Earned after completing SQL Course on Udemy",
+      image: require("./assets/Certificates/SQL.jpg"),
+      imageAlt: "SQL Certificate",
       footerLink: [
-        { name: "View Credential", url: "https://..." }
+        {
+          name: "View Credential",
+          url: "https://drive.google.com/file/d/1uiIwFkrbSk9RY4T3n_TlrQ4ioA30Iy3M/view?usp=sharing"
+        }
       ]
     }
+    
+    
   ],
   display: true
 };
