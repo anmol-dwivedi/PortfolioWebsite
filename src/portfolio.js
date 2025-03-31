@@ -238,24 +238,24 @@ const educationInfo = {
 
 // Your top 3 proficient stacks/tech experience
 
-const techStack = {
-  viewSkillBars: false, //Set it to true to show Proficiency Section
-  experience: [
-    {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
-    },
-    {
-      Stack: "Backend",
-      progressPercentage: "70%"
-    },
-    {
-      Stack: "Programming",
-      progressPercentage: "60%"
-    }
-  ],
-  displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
-};
+// const techStack = {
+//   viewSkillBars: false, //Set it to true to show Proficiency Section
+//   experience: [
+//     {
+//       Stack: "Frontend/Design", //Insert stack or technology you have experience in
+//       progressPercentage: "90%" //Insert relative proficiency in percentage
+//     },
+//     {
+//       Stack: "Backend",
+//       progressPercentage: "70%"
+//     },
+//     {
+//       Stack: "Programming",
+//       progressPercentage: "60%"
+//     }
+//   ],
+//   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
+// };
 
 //////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -273,41 +273,7 @@ const openSource = {
 
 //////////////////////////////////////////////////////////////////////////////////////////////
 
-// Some big projects you have worked on
 
-const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
-  projects: [
-    {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
-        }
-        //  you can add extra buttons here.
-      ]
-    },
-    {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://nextu.se/"
-        }
-      ]
-    }
-  ],
-  display: false // Set false to hide this section, defaults to true
-};
-
-// Achievement Section
-// Include certificates, talks etc
 
 const projectsSection = {
   title: emoji("Projects 🛠️ "),
@@ -793,10 +759,10 @@ export {
   splashScreen,
   skillsSection,
   educationInfo,
-  techStack,
+  // techStack,
   // workExperiences,
   openSource,
-  bigProjects,
+  // bigProjects,
   // achievementSection,
   projectsSection,
   certificationsSection,
