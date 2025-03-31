@@ -259,61 +259,7 @@ const techStack = {
 
 //////////////////////////////////////////////////////////////////////////////////////////////
 
-//Work experience section
 
-// const workExperiences = {
-//   display: false, //Set it to true to show workExperiences Section
-//   experience: [
-//     {
-//       role: "Graduate Teaching Assistant",
-//       company: "University of Texas at Dallas",
-//       companylogo: require("./assets/images/utd_logo.png"),
-//       date: "Aug 2024 – Present",
-//       desc: "Graduate Teaching Assistant for Predictive Analytics under Proff Shervin Tehrani and AWS Cloud Fundamentals under Proff. Abdul Raheem",
-//       descBullets: [
-//         "Coordinate and communicate important course announcements to ensure timely and effective student communication.",
-//         "Support and mentor students by addressing their questions and clarifying doubts to facilitate a deeper understanding of course concepts.",
-//         "Evaluate, grade, and provide feedback on assignments and exams to help students improve their performance and grasp of the subject matter."
-//       ]
-//     },
-//     {
-//       role: "Jr. Data Scientist",
-//       company: "Grant Thornton",
-//       companylogo: require("./assets/images/gt_logo.png"),
-//       date: "mar 2022 – Aug 2023",
-//       desc: "Worked as a Business Analyst, delivering data-driven audit automation, financial risk analysis, and executive reporting solutions for clients across banking and insurance domains.",
-//       descBullets: [
-//         "Designed and deployed 50+ Power BI dashboards to automate internal audit processes, reducing audit turnaround time by 30% and surfacing $500K in potential financial risks.",
-//         "Led a pre-implementation audit review for a $2B Commercial & Industrial Loan Portfolio’s CECL model, identifying compliance gaps and risk exposure.",
-//         "Developed Key Risk Indicators (KRIs) and continuous monitoring dashboards for an insurance client, improving real-time oversight of underwriting and claims metrics.",
-//         ""
-//       ]
-//     },
-//     {
-//       role: "Data Analyst",
-//       company: "L S Digital Pvt Limited",
-//       companylogo: require("./assets/images/ls.png"),
-//       date: "Feb 2021 – Mar 2022",
-//       desc: "Served as the first Data Analyst on the Data Solutions team, spearheading the development of marketing intelligence and automation frameworks from the ground up using Python, AWS, and BI tools for multi-channel digital campaigns.",
-//       descBullets: [
-//         "Built a Python-based proof-of-concept lead scoring model, increasing qualified leads by 10% and improving conversion targeting for the sales team.",
-//         "Automated data ingestion pipelines from 20+ marketing sources using AWS (Lambda, S3, Glue), reducing manual effort and enabling real-time dashboarding.",
-//         "Developed interactive AWS Quicksight dashboards for performance tracking and insights, eliminating 80+ hours of monthly manual reporting."
-//       ]
-//     },
-//     {
-//       role: "Application Development Associate",
-//       company: "Accenture",
-//       companylogo: require("./assets/images/accenture.png"),
-//       date: "Jan 2015 – Sep 2015",
-//       desc: "Worked as an Application Development Associate, leveraging Python and SQL to process large datasets and improve reporting efficiency in enterprise data systems.",
-//       descBullets: [
-//         "Gained Hands on Experience on Python, SQL, HTML, CSS, JavaScript",
-//         "Analyzed and processed large datasets using Python, SQL, and HTML to generate actionable insights, improving reporting efficiency by 10% for a client-facing application."
-//       ]
-//     }
-//   ]
-// };
 
 //////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -526,33 +472,130 @@ const achievementsSection = {
   subtitle: "Celebrating memorable moments and extracurricular wins",
   achievementsCards: [
     {
-      title: "Toastmasters Icebreaker",
-      subtitle: "Delivered my first speech at UTD Toastmasters!",
-      image: require("./assets/images/toastmasters.png"),
-      imageAlt: "Toastmasters",
+      title: "Won the District Level CBSE Competition!",
+      subtitle: "",
+      image: require("./assets/images/extracurriculars/1.JPG"),
+      imageAlt: "Aeronautics - KIIT",
       footerLink: [
-        { name: "Photo", url: "https://..." }
+        // { name: "Photo", url: "https://..." }
       ]
     },
     {
-      title: "Toastmasters Icebreaker",
-      subtitle: "Delivered my first speech at UTD Toastmasters!",
-      image: require("./assets/images/toastmasters.png"),
-      imageAlt: "Toastmasters",
+      title: "Led a team of 3 members to SAE National Aero Design Workshop",
+      subtitle: "",
+      image: require("./assets/images/extracurriculars/2.jpg"),
+      imageAlt: "Aeronautics - KIIT",
       footerLink: [
-        { name: "Photo", url: "https://..." }
+        // { name: "Photo", url: "https://..." }
       ]
     },
     {
-      title: "Toastmasters Icebreaker",
-      subtitle: "Delivered my first speech at UTD Toastmasters!",
-      image: require("./assets/images/toastmasters.png"),
-      imageAlt: "Toastmasters",
+      title: "Led a team of 7 members to SAE National Aero Design Challenge and Won 3rd place in Best Innovation Category for Regular Class",
+      subtitle: "",
+      image: require("./assets/images/extracurriculars/3.jpg"),
+      imageAlt: "Aeronautics - KIIT",
       footerLink: [
-        { name: "Photo", url: "https://..." }
+        // { name: "Photo", url: "https://..." }
       ]
-    }
-    // Add more moments...
+    },
+    {
+      title: "Joined the Prestigious iFriend Initiative Program at ICP UTD",
+      subtitle: "",
+      image: require("./assets/images/extracurriculars/6.jpg"),
+      imageAlt: "UTD iFriend Program",
+      footerLink: [
+        // { name: "Photo", url: "https://..." }
+      ]
+    },
+    {
+      title: "Volunteered at FMSC (Feed My Starving Children) and helped pack 10,000 meals for children in need",
+      subtitle: "",
+      image: require("./assets/images/extracurriculars/5.jpg"),
+      imageAlt: "UTD ILC",
+      footerLink: [
+        // { name: "Photo", url: "https://..." }
+      ]
+    },
+    {
+      title: "Led the Volunteer Team for the 2023 Plano International Festival",
+      subtitle: "",
+      image: require("./assets/images/extracurriculars/4.jpg"),
+      imageAlt: "UTD ILC",
+      footerLink: [
+        // { name: "Photo", url: "https://..." }
+      ]
+    },
+    {
+      title: "Elected at Vice President at Lion's Club UTD",
+      subtitle: "",
+      image: require("./assets/images/extracurriculars/7.jpg"),
+      imageAlt: "UTD ILC",
+      footerLink: [
+        // { name: "Photo", url: "https://..." }
+      ]
+    },
+    {
+      title: "Joined the UTD Toastmasters Club as Sergeant at Arms",
+      subtitle: "",
+      image: require("./assets/images/extracurriculars/7_2.png"),
+      imageAlt: "UTD",
+      footerLink: [
+        // { name: "Photo", url: "https://..." }
+      ]
+    },
+    {
+      title: "Represented the UTD Lion's Club at the UTD New Grad Fest",
+      subtitle: "",
+      image: require("./assets/images/extracurriculars/8.jpg"),
+      imageAlt: "UTD",
+      footerLink: [
+        // { name: "Photo", url: "https://..." }
+      ]
+    },
+    {
+      title: "Got Selected as Graduate Teaching Assistant for Predictive Analytics and AWS Cloud Fundamentals",
+      subtitle: "",
+      image: require("./assets/images/extracurriculars/9.jpg"),
+      imageAlt: "UTD",
+      footerLink: [
+        // { name: "Photo", url: "https://..." }
+      ]
+    },{
+      title: "Successfully Organized the Spring 2024 New Grad Orientation",
+      subtitle: "",
+      image: require("./assets/images/extracurriculars/10.jpg"),
+      imageAlt: "UTD",
+      footerLink: [
+        // { name: "Photo", url: "https://..." }
+      ]
+    },
+    {
+      title: "Led the Volunteers Team for the 2024 Plano International Festival",
+      subtitle: "",
+      image: require("./assets/images/extracurriculars/11.jpg"),
+      imageAlt: "UTD",
+      footerLink: [
+        // { name: "Photo", url: "https://..." }
+      ]
+    },
+    {
+      title: "Helped Organize the End of Semester Breakfast Event for Fall'24",
+      subtitle: "",
+      image: require("./assets/images/extracurriculars/13.jpg"),
+      imageAlt: "UTD",
+      footerLink: [
+        // { name: "Photo", url: "https://..." }
+      ]
+    },
+    {
+      title: "Attended the Snowflake Data Users Conference in Dallas",
+      subtitle: "",
+      image: require("./assets/images/extracurriculars/14.jpg"),
+      imageAlt: "UTD",
+      footerLink: [
+        // { name: "Photo", url: "https://..." }
+      ]
+    },
   ],
   display: true
 };
