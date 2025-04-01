@@ -1,6 +1,9 @@
 # 🚀 Portfolio Website README
 
-[🌐 # Live Site**]([https://your-custom-domain.com](https://anmol-dwivedi-portfolio.netlify.app/]) <!-- Replace with actual link -->
+# Anmol Dwivedi - Portfolio Website
+
+**🌐 Live Site:** [https://anmol-dwivedi-portfolio.netlify.app](https://anmol-dwivedi-portfolio.netlify.app)
+
 
 ---
 
