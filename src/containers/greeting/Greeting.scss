@@ -16,7 +16,7 @@
 
 .profile-image {
   width: 100%;
-  max-width: 100px;
+  max-width: 50px; // 🔽 Reduced from 100px
   border-radius: 20px;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
 }
@@ -135,6 +135,10 @@
   }
   .greeting-image-div {
     height: 256px;
+  }
+
+  .profile-image {
+    max-width: 40px; // 🔽 Smaller on mobile
   }
 }
 
