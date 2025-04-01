@@ -432,7 +432,7 @@ const achievementsSection = {
     {
       title: "Won the District Level CBSE Competition!",
       subtitle: "",
-      image: require("./assets/images/extracurriculars/1.jpg"),
+      image: require("./assets/images/extracurriculars/1.webp"),
       imageAlt: "Aeronautics - KIIT",
       footerLink: [
         // { name: "Photo", url: "https://..." }
@@ -441,7 +441,7 @@ const achievementsSection = {
     {
       title: "Led a team of 3 members to SAE National Aero Design Workshop",
       subtitle: "",
-      image: require("./assets/images/extracurriculars/2.jpg"),
+      image: require("./assets/images/extracurriculars/2.webp"),
       imageAlt: "Aeronautics - KIIT",
       footerLink: [
         // { name: "Photo", url: "https://..." }
@@ -450,7 +450,7 @@ const achievementsSection = {
     {
       title: "Led a team of 7 members to SAE National Aero Design Challenge and Won 3rd place in Best Innovation Category for Regular Class",
       subtitle: "",
-      image: require("./assets/images/extracurriculars/3.jpg"),
+      image: require("./assets/images/extracurriculars/3.webp"),
       imageAlt: "Aeronautics - KIIT",
       footerLink: [
         // { name: "Photo", url: "https://..." }
@@ -459,7 +459,7 @@ const achievementsSection = {
     {
       title: "Joined the Prestigious iFriend Initiative Program at ICP UTD",
       subtitle: "",
-      image: require("./assets/images/extracurriculars/6.jpg"),
+      image: require("./assets/images/extracurriculars/6.webp"),
       imageAlt: "UTD iFriend Program",
       footerLink: [
         // { name: "Photo", url: "https://..." }
@@ -468,7 +468,7 @@ const achievementsSection = {
     {
       title: "Volunteered at FMSC (Feed My Starving Children) and helped pack 10,000 meals for children in need",
       subtitle: "",
-      image: require("./assets/images/extracurriculars/5.jpg"),
+      image: require("./assets/images/extracurriculars/5.webp"),
       imageAlt: "UTD ILC",
       footerLink: [
         // { name: "Photo", url: "https://..." }
@@ -477,7 +477,7 @@ const achievementsSection = {
     {
       title: "Led the Volunteer Team for the 2023 Plano International Festival",
       subtitle: "",
-      image: require("./assets/images/extracurriculars/4.jpg"),
+      image: require("./assets/images/extracurriculars/4.webp"),
       imageAlt: "UTD ILC",
       footerLink: [
         // { name: "Photo", url: "https://..." }
@@ -486,7 +486,7 @@ const achievementsSection = {
     {
       title: "Elected at Vice President at Lion's Club UTD",
       subtitle: "",
-      image: require("./assets/images/extracurriculars/7.jpg"),
+      image: require("./assets/images/extracurriculars/7.webp"),
       imageAlt: "UTD ILC",
       footerLink: [
         // { name: "Photo", url: "https://..." }
@@ -495,7 +495,7 @@ const achievementsSection = {
     {
       title: "Joined the UTD Toastmasters Club as Sergeant at Arms",
       subtitle: "",
-      image: require("./assets/images/extracurriculars/7_2.png"),
+      image: require("./assets/images/extracurriculars/7_2.webp"),
       imageAlt: "UTD",
       footerLink: [
         // { name: "Photo", url: "https://..." }
@@ -504,7 +504,7 @@ const achievementsSection = {
     {
       title: "Represented the UTD Lion's Club at the UTD New Grad Fest",
       subtitle: "",
-      image: require("./assets/images/extracurriculars/8.jpg"),
+      image: require("./assets/images/extracurriculars/8.webp"),
       imageAlt: "UTD",
       footerLink: [
         // { name: "Photo", url: "https://..." }
@@ -513,7 +513,7 @@ const achievementsSection = {
     {
       title: "Got Selected as Graduate Teaching Assistant for Predictive Analytics and AWS Cloud Fundamentals",
       subtitle: "",
-      image: require("./assets/images/extracurriculars/9.jpg"),
+      image: require("./assets/images/extracurriculars/9.webp"),
       imageAlt: "UTD",
       footerLink: [
         // { name: "Photo", url: "https://..." }
@@ -521,7 +521,7 @@ const achievementsSection = {
     },{
       title: "Successfully Organized the Spring 2024 New Grad Orientation",
       subtitle: "",
-      image: require("./assets/images/extracurriculars/10.jpg"),
+      image: require("./assets/images/extracurriculars/10.webp"),
       imageAlt: "UTD",
       footerLink: [
         // { name: "Photo", url: "https://..." }
@@ -530,25 +530,25 @@ const achievementsSection = {
     {
       title: "Led the Volunteers Team for the 2024 Plano International Festival",
       subtitle: "",
-      image: require("./assets/images/extracurriculars/11.jpg"),
+      image: require("./assets/images/extracurriculars/11.webp"),
       imageAlt: "UTD",
       footerLink: [
         // { name: "Photo", url: "https://..." }
       ]
     },
-    {
-      title: "Helped Organize the End of Semester Breakfast Event for Fall'24",
-      subtitle: "",
-      image: require("./assets/images/extracurriculars/13.jpg"),
-      imageAlt: "UTD",
-      footerLink: [
-        // { name: "Photo", url: "https://..." }
-      ]
-    },
+    // {
+    //   title: "Helped Organize the End of Semester Breakfast Event for Fall'24",
+    //   subtitle: "",
+    //   image: require("./assets/images/extracurriculars/13.webp"),
+    //   imageAlt: "UTD",
+    //   footerLink: [
+    //     // { name: "Photo", url: "https://..." }
+    //   ]
+    // },
     {
       title: "Attended the Snowflake Data Users Conference in Dallas",
       subtitle: "",
-      image: require("./assets/images/extracurriculars/14.jpg"),
+      image: require("./assets/images/extracurriculars/14.webp"),
       imageAlt: "UTD",
       footerLink: [
         // { name: "Photo", url: "https://..." }
