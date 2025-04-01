@@ -432,7 +432,7 @@ const achievementsSection = {
     {
       title: "Won the District Level CBSE Competition!",
       subtitle: "",
-      image: require("./assets/images/extracurriculars/1.JPG"),
+      image: require("./assets/images/extracurriculars/1.jpg"),
       imageAlt: "Aeronautics - KIIT",
       footerLink: [
         // { name: "Photo", url: "https://..." }
