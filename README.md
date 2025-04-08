@@ -2,12 +2,11 @@
 
 # Anmol Dwivedi - Portfolio Website
 
-**🌐 Live Site:** [https://anmol-dwivedi-portfolio.netlify.app](https://anmol-dwivedi-portfolio.netlify.app)
-
+**🌐 Live Site:** [https://anmol-dwivedi-portfolio.netlify.app/](https://anmol-dwivedi-portfolio.netlify.app/)
 
 ---
 
-## 📘 Overview
+## 📘 Overview  
 A sleek, fully customizable **React-based portfolio website** to showcase your projects, skills, experience, and certifications. Built for scalability, with JSON-driven modals, tag-based filtering, and modern UI components.
 
 This project is based on [`developerFolio`](https://github.com/saadpasta/developerFolio) and [`sample-portfolio-using-react`](https://github.com/saurabhp94/sample-portfolio-using-react), customized to fit personal storytelling and dynamic content integration.
@@ -41,14 +40,16 @@ This project is based on [`developerFolio`](https://github.com/saadpasta/develop
 
 ### Phase 5: Hosting & Deployment
 - Fixed image rendering issues
-- Deployed on **GitHub Pages** and **Netlify**
+- Deployed on **Netlify**
 - Connected to **custom domain**
-- (Optional) Added visitor count/GitHub tracker
 
-### Phase 6: Final Polish
-- UI animations and transition cleanup
-- All projects filtered and modal logic confirmed working
-- Ready for ongoing updates through JSON
+### Phase 6: Final Polish & Structure Optimization ✅
+- Extracted **Projects section** to its own modular file `projectsData.js` for easier updates
+- Replaced `AchievementCard` with a custom `ProjectSectionCard` for better control and layout flexibility
+- Styled **tech stack hashtags** for each project with soft grey chip + purple/yellow text
+- Implemented **grid alignment fix** to keep cards centered even after filtering
+- Preserved essential files like `Dockerfile`, `package.json`, and `.env` at root for build consistency
+- Verified ESLint ordering rules (thanks, OCD 😉)
 
 ---
 
@@ -57,8 +58,10 @@ This project is based on [`developerFolio`](https://github.com/saadpasta/develop
 - Fully customizable JSON structure for project modals
 - Multi-tag filtering system using chips
 - Sticky navbar and responsive layout
+- Modularized `projectsData.js` for easy project management
+- Custom `ProjectSectionCard` component with styled tech hashtags
 - Easy integration of documents (degrees, certifications, resumes)
-- Deployment-ready with support for GitHub Pages and Netlify
+- Deployment-ready via Netlify with custom domain support
 
 ---
 
@@ -68,17 +71,24 @@ This project is based on [`developerFolio`](https://github.com/saadpasta/develop
   ├── assets
   │   └── Education Docs
   ├── components
-  ├── portfolio.js  // centralized data for all sections
+  ├── containers
+  │   └── projectsSection
+  │       ├── ProjectsSection.js
+  │       ├── ProjectsSection.scss
+  │       └── ProjectSectionCard.js
+  ├── portfolio.js        // section config (at /src)
+  ├── projectsData.js     // project data (at /src)
   └── App.js & Main.js
 ```
 
 ---
 
 ## 🚀 Getting Started
+
 ### 1. Clone the repo
 ```bash
-git clone https://github.com/your-username/portfolio-website.git
-cd portfolio-website
+git clone https://github.com/anmol-dwivedi/PortfolioWebsite.git
+cd PortfolioWebsite
 ```
 
 ### 2. Install dependencies
@@ -99,17 +109,13 @@ npm run build
 ---
 
 ## 🌐 Deployment
-### Deploy on GitHub Pages
-- Configure `homepage` in `package.json`
-- Run:
-```bash
-npm run deploy
-```
 
 ### Deploy on Netlify
-- Drag & drop `/build` folder into Netlify UI or link GitHub repo directly
-- Set `build command` as `npm run build`
-- Set `publish directory` as `build/`
+- Drag & drop the `/build` folder into Netlify UI **or** connect your GitHub repo directly
+- Set:
+  - `build command` → `npm run build`
+  - `publish directory` → `build/`
+- Use custom domain or Netlify default subdomain
 
 ---
 
