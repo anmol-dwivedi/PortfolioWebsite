@@ -263,7 +263,7 @@ const projectsSection = {
         { name: "Live Demo", url: "https://ecommercecustomerchurn-jcdaayd4gbbatcnsnyussf.streamlit.app/" }
       ],
       category: ["Machine Learning"],
-      // technologies: ["Python", "Scikit-Learn", "Pandas"]
+      technologies: ["Python", "Scikit-Learn", "Pandas"]
     },
     {
       title: "Media Mix Modeling",

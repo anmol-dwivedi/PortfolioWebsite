@@ -1,0 +1,120 @@
+@import "../../_globalColor";
+
+/* 🔷 Image Styling - Uniform Size & Centered */
+.certificate-image-div {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1e1e1e; // fallback background if image has transparency
+}
+
+.card-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  width: auto;
+}
+
+/* 🔷 Card Title & Subtitle */
+.card-title {
+  color: $titleColor;
+  font-size: 1.375rem;
+  line-height: 24px;
+  font-weight: 700;
+  margin: 15px 0 0 0;
+}
+
+.card-subtitle {
+  color: $cardSubtitle;
+  font-size: 1.063rem;
+  line-height: 1.5rem;
+}
+
+/* 🔷 Card Layout */
+.certificate-card {
+  background-color: $lightBackground2;
+  box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid $lightBorder1;
+  transition: all 0.3s ease;
+}
+
+.certificate-detail-div {
+  text-align: center;
+}
+
+.certificate-card:hover {
+  box-shadow: $lightBoxShadowDark 0px 20px 30px -10px;
+}
+
+.dark-mode.certificate-card:hover {
+  box-shadow: $achievementCertificateCardHoverDark 0px 20px 30px -10px;
+}
+
+/* 🔷 Project Grid */
+.achievement-cards-div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem 1rem;
+}
+
+/* 🔷 Footer Buttons (GitHub Code, Live Demo) */
+.certificate-card-footer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.certificate-card-footer span.certificate-tag {
+  background: $buttonColor;
+  color: $lightBackground3;
+  border-radius: 6px;
+  display: inline-flex;
+  font-size: 0.9rem;
+  height: 2.5em;
+  justify-content: center;
+  white-space: nowrap;
+  line-height: 1.5;
+  margin: 0 0.5rem 0.5rem 0;
+  padding: 0 1.2em;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+span.certificate-tag:hover {
+  background: $buttonHover;
+  transform: scale(1.05);
+}
+
+/* 🔷 Tech Hashtag Styling */
+.tech-tags-container {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.tech-tag {
+  background-color: rgba(255, 255, 255, 0.08); // soft dark grey on dark background
+  color: #dbb73e; // golden yellow for vibrant contrast
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 20px;
+  text-transform: lowercase;
+  transition: all 0.2s ease;
+}
+
+.tech-tag:hover {
+  background-color: rgba(255, 255, 255, 0.15); // slightly lighter on hover
+  transform: scale(1.05);
+}

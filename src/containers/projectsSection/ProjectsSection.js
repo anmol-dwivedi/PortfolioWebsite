@@ -1,6 +1,6 @@
 import React, { useContext, useState, useMemo } from "react";
 import "./ProjectsSection.scss";
-import AchievementCard from "../../components/achievementCard/AchievementCard";
+import ProjectSectionCard from "./ProjectSectionCard"; // ✅ Updated import path
 import Button from "../../components/button/Button";
 import { projectsSection } from "../../portfolio";
 import { Fade } from "react-reveal";
@@ -30,13 +30,12 @@ export default function ProjectsSection() {
   const toggleFilter = (item, type) => {
     if (type === "category") {
       setSelectedCategories((prev) => (prev[0] === item ? [] : [item]));
-      setSelectedTechnologies([]); // clear tech if category selected
+      setSelectedTechnologies([]);
     } else {
       setSelectedTechnologies((prev) => (prev[0] === item ? [] : [item]));
-      setSelectedCategories([]); // clear category if tech selected
+      setSelectedCategories([]);
     }
   };
-  
 
   const filteredProjects = useMemo(() => {
     if (selectedCategories.length === 0 && selectedTechnologies.length === 0) {
@@ -82,11 +81,11 @@ export default function ProjectsSection() {
 
           {/* 🔘 FILTER CHIPS */}
           <div className="filter-chips">
-            {/* ALL Button */}
             <Button
               text="All"
               className={`filter-chip-button ${
-                selectedCategories.length === 0 && selectedTechnologies.length === 0
+                selectedCategories.length === 0 &&
+                selectedTechnologies.length === 0
                   ? "active"
                   : ""
               }`}
@@ -139,7 +138,7 @@ export default function ProjectsSection() {
           {/* 🧠 FILTERED PROJECT CARDS */}
           <div className="projects-cards-grid">
             {filteredProjects.map((card, i) => (
-              <AchievementCard
+              <ProjectSectionCard
                 key={i}
                 isDark={isDark}
                 cardInfo={{
@@ -148,6 +147,7 @@ export default function ProjectsSection() {
                   image: card.image,
                   imageAlt: card.imageAlt,
                   footer: card.footerLink,
+                  technologies: card.technologies || []
                 }}
               />
             ))}
