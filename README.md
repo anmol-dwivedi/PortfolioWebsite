@@ -7,7 +7,7 @@
 ---
 
 ## 📘 Overview  
-A sleek, fully customizable **React-based portfolio website** to showcase your projects, skills, experience, and certifications. Built for scalability, with JSON-driven modals, tag-based filtering, and modern UI components.
+A sleek, fully customizable **React-based portfolio website** to showcase my projects, skills, experience, certifications and leadership. Built for scalability, with JSON-driven modals, tag-based filtering, and modern UI components.
 
 This project is based on [`developerFolio`](https://github.com/saadpasta/developerFolio) and [`sample-portfolio-using-react`](https://github.com/saurabhp94/sample-portfolio-using-react), customized to fit personal storytelling and dynamic content integration.
 
@@ -89,20 +89,14 @@ This project is based on [`developerFolio`](https://github.com/saadpasta/develop
 ```bash
 git clone https://github.com/anmol-dwivedi/PortfolioWebsite.git
 cd PortfolioWebsite
-```
 
 ### 2. Install dependencies
-```bash
 npm install
-```
 
 ### 3. Start development server
-```bash
 npm start
-```
 
 ### 4. Build for production
-```bash
 npm run build
 ```
 
