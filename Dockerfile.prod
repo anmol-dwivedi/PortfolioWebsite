@@ -1,0 +1,33 @@
+# Use a lightweight Node.js image to build the app
+FROM node:20.0-alpine AS builder
+
+# Set the working directory inside the container
+WORKDIR /app
+
+# Copy only dependency files first (for layer caching)
+COPY package*.json ./
+
+# Install project dependencies
+RUN npm install
+
+# Now copy the full source code
+COPY . .
+
+# Build the app for production
+RUN npm run build
+
+
+# Use a clean, fast NGINX image to serve the site
+FROM nginx:alpine
+
+# Clear out the default NGINX site
+RUN rm -rf /usr/share/nginx/html/*
+
+# Copy React build from previous container stage
+COPY --from=builder /app/build /usr/share/nginx/html
+
+# Expose port 80 so we can access it
+EXPOSE 80
+
+# Start the NGINX server
+CMD ["nginx", "-g", "daemon off;"]

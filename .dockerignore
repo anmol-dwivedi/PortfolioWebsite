@@ -1,0 +1,22 @@
+# Ignore node_modules (local dependencies)
+node_modules
+
+# Ignore already-built files
+build
+
+# Ignore git stuff
+.git
+.gitignore
+
+# Ignore Docker-related
+Dockerfile
+Dockerfile.prod
+.dockerignore
+
+# VSCode configs
+.vscode
+
+# Local environment files
+.env
+*.log
+*.swp

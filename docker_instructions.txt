@@ -1,0 +1,146 @@
+
+===============================
+🛠️ Docker Setup & Usage Guide
+===============================
+
+Author: Anmol Dwivedi
+Purpose: Personal learning notes for Dockerizing the React Portfolio Website
+
+---------------------------------------------------
+📦 Section 1: Installing Docker on Ubuntu (Cleanly)
+---------------------------------------------------
+
+✅ Step-by-step:
+
+1. Uninstall old Docker versions:
+   sudo apt-get remove docker docker-engine docker.io containerd runc
+
+2. Update apt and install dependencies:
+   sudo apt-get update
+   sudo apt-get install \
+       ca-certificates \
+       curl \
+       gnupg \
+       lsb-release
+
+3. Add Docker’s official GPG key:
+   sudo mkdir -p /etc/apt/keyrings
+   curl -fsSL https://download.docker.com/linux/ubuntu/gpg | \
+       sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+
+4. Add Docker’s stable repository:
+   echo \
+     "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] \
+     https://download.docker.com/linux/ubuntu \
+     $(lsb_release -cs) stable" | \
+     sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+
+5. Install Docker Engine:
+   sudo apt-get update
+   sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+
+6. Verify Docker installation:
+   docker --version
+
+🔧 Issue I faced:
+- Error: permission denied while trying to connect to the Docker daemon socket
+
+✅ Fix:
+   sudo usermod -aG docker $USER
+   newgrp docker
+
+This added my user to the `docker` group and allowed me to use Docker without sudo.
+
+---------------------------------------------------
+🐳 Section 2: Creating a Dockerfile for React Build
+---------------------------------------------------
+
+1. Navigate to project root:
+   cd ~/Desktop/Website/developerFolio-master
+
+2. Create the Dockerfile:
+   touch Dockerfile.prod
+   code Dockerfile.prod
+
+3. Add the following content:
+
+---------------- Dockerfile.prod ------------------
+# Build stage
+FROM node:20.0-alpine AS builder
+WORKDIR /app
+COPY package*.json ./
+RUN npm install
+COPY . .
+RUN npm run build
+
+# Serve stage
+FROM nginx:alpine
+RUN rm -rf /usr/share/nginx/html/*
+COPY --from=builder /app/build /usr/share/nginx/html
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
+---------------------------------------------------
+
+🧠 Explanation:
+- Multi-stage build: use Node.js to build React, NGINX to serve static files
+- Keeps final image light and secure
+
+---------------------------------------------------
+🚫 Section 3: Creating a .dockerignore File
+---------------------------------------------------
+
+1. Create the file in root folder:
+   touch .dockerignore
+   code .dockerignore
+
+2. Add the following content:
+
+--------------- .dockerignore ---------------------
+node_modules
+build
+.git
+.gitignore
+Dockerfile
+Dockerfile.prod
+.dockerignore
+.vscode
+.env
+*.log
+*.swp
+---------------------------------------------------
+
+🧠 Why?
+- Avoid bloating image with unnecessary files
+- Protect secrets
+- Speed up builds
+
+---------------------------------------------------
+🚀 Section 4: Building, Running, Stopping Docker
+---------------------------------------------------
+
+✅ Build the Docker image:
+   docker build -f Dockerfile.prod -t anmol-portfolio .
+
+✅ Run the container (on port 8080):
+   docker run -d -p 8080:80 anmol-portfolio
+
+✅ Open in browser:
+   http://localhost:8080
+
+🛑 Stop a running container:
+   docker ps      # Get container ID
+   docker stop <container_id>
+
+🗑️ Remove a container:
+   docker rm <container_id>
+
+🧼 Remove the image:
+   docker rmi anmol-portfolio
+
+---------------------------------------------------
+📘 Final Notes
+---------------------------------------------------
+- We stuck with `node:20.0-alpine` and `nginx:alpine` despite minor warnings.
+- All configs were stable and verified locally.
+- `.dockerignore` was added for optimization.
+- Old Dockerfile was renamed to Dockerfile_OriginalOld.
