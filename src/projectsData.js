@@ -38,17 +38,24 @@ const projectsSection = {
       technologies: ["Python", "Scipy", "FastAPI", "MLflow"]
     },
     {
-      title: "Wine Sale Forecasting",
-      subtitle: "Used time series modeling to forecast wine sales and seasonal trends.",
-      image: require("./assets/Project_Thumbnails/ComingSoon.webp"),
-      imageAlt: "Wine Sales Prediction",
-      footerLink: [
-        { name: "GitHub Code", url: "#" },
-        { name: "Live Demo", url: "#" }
+      "title": "Wine Sales Forecasting App",
+      "subtitle": "Built an end-to-end time series forecasting app using SARIMA, ARIMA, Prophet, LSTM, and XGBoost to forecast monthly Sparkling and Rose wine sales with detailed model diagnostics and business insights.",
+      "image": require("./assets/Project_Thumbnails/wine_forecasting.webp"),
+      "imageAlt": "Wine Sales Forecasting Dashboard",
+      "footerLink": [
+        {
+          "name": "GitHub Code",
+          "url": "https://github.com/anmol-dwivedi/WineSalesProject.webp"
+        },
+        {
+          "name": "Live Demo",
+          "url": "https://timeserieswinesale-mbye5mjsegwbckbvv8txrg.streamlit.app/"
+        }
       ],
-      category: ["Data Analytics"],
-      technologies: ["Python", "Prophet", "Pandas"]
-    },
+      "category": ["Time Series", "Forecasting", "Business Analytics"],
+      "technologies": ["Python", "SARIMA", "Prophet", "LSTM", "XGBoost", "Pandas", "Streamlit"]
+    }
+    ,
     {
       title: "Food Vision",
       subtitle:
