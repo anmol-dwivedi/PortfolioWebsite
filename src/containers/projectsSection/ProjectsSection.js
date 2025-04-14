@@ -1,6 +1,6 @@
 import React, { useContext, useState, useMemo } from "react";
 import "./ProjectsSection.scss";
-import ProjectSectionCard from "./ProjectSectionCard"; // ✅ Updated import path
+import ProjectSectionCard from "./ProjectSectionCard";
 import Button from "../../components/button/Button";
 import { projectsSection } from "../../portfolio";
 import { Fade } from "react-reveal";
@@ -9,7 +9,6 @@ import StyleContext from "../../contexts/StyleContext";
 export default function ProjectsSection() {
   const { isDark } = useContext(StyleContext);
   const [selectedCategories, setSelectedCategories] = useState([]);
-  const [selectedTechnologies, setSelectedTechnologies] = useState([]);
 
   const allCategories = useMemo(() => {
     const cats = new Set();
@@ -19,38 +18,18 @@ export default function ProjectsSection() {
     return [...cats];
   }, []);
 
-  const allTechnologies = useMemo(() => {
-    const techs = new Set();
-    projectsSection.achievementsCards.forEach((card) =>
-      card.technologies?.forEach((tech) => techs.add(tech))
-    );
-    return [...techs];
-  }, []);
-
-  const toggleFilter = (item, type) => {
-    if (type === "category") {
-      setSelectedCategories((prev) => (prev[0] === item ? [] : [item]));
-      setSelectedTechnologies([]);
-    } else {
-      setSelectedTechnologies((prev) => (prev[0] === item ? [] : [item]));
-      setSelectedCategories([]);
-    }
+  const toggleFilter = (item) => {
+    setSelectedCategories((prev) => (prev[0] === item ? [] : [item]));
   };
 
   const filteredProjects = useMemo(() => {
-    if (selectedCategories.length === 0 && selectedTechnologies.length === 0) {
+    if (selectedCategories.length === 0) {
       return projectsSection.achievementsCards;
     }
-    return projectsSection.achievementsCards.filter((project) => {
-      const matchCategory = selectedCategories.every((cat) =>
-        project.category?.includes(cat)
-      );
-      const matchTechnology = selectedTechnologies.every((tech) =>
-        project.technologies?.includes(tech)
-      );
-      return matchCategory && matchTechnology;
-    });
-  }, [selectedCategories, selectedTechnologies]);
+    return projectsSection.achievementsCards.filter((project) =>
+      selectedCategories.every((cat) => project.category?.includes(cat))
+    );
+  }, [selectedCategories]);
 
   if (!projectsSection.display) return null;
 
@@ -84,21 +63,17 @@ export default function ProjectsSection() {
             <Button
               text="All"
               className={`filter-chip-button ${
-                selectedCategories.length === 0 &&
-                selectedTechnologies.length === 0
-                  ? "active"
-                  : ""
+                selectedCategories.length === 0 ? "active" : ""
               }`}
               href="#"
               newTab={false}
               onClick={(e) => {
                 e.preventDefault();
                 setSelectedCategories([]);
-                setSelectedTechnologies([]);
               }}
             />
 
-            {/* Categories */}
+            {/* Categories Only */}
             {allCategories.map((cat, i) => {
               const isActive = selectedCategories.includes(cat);
               return (
@@ -110,25 +85,7 @@ export default function ProjectsSection() {
                   newTab={false}
                   onClick={(e) => {
                     e.preventDefault();
-                    toggleFilter(cat, "category");
-                  }}
-                />
-              );
-            })}
-
-            {/* Technologies */}
-            {allTechnologies.map((tech, i) => {
-              const isActive = selectedTechnologies.includes(tech);
-              return (
-                <Button
-                  key={`tech-${i}`}
-                  text={tech}
-                  className={`filter-chip-button ${isActive ? "active" : ""}`}
-                  href="#"
-                  newTab={false}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    toggleFilter(tech, "technology");
+                    toggleFilter(cat);
                   }}
                 />
               );

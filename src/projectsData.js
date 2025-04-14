@@ -52,7 +52,7 @@ const projectsSection = {
           url: "https://timeserieswinesale-mbye5mjsegwbckbvv8txrg.streamlit.app/"
         }
       ],
-      category: ["Time Series", "Forecasting", "Business Analytics"],
+      category: ["Machine Learning"],
       technologies: ["Python", "SARIMA", "Prophet", "LSTM", "XGBoost", "Pandas", "Streamlit"]
     }
     ,
