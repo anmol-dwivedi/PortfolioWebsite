@@ -5,9 +5,9 @@ const projectsSection = {
   subtitle: "Some Cool Projects that I have worked on !",
   achievementsCards: [
     {
-      title: "Customer Churn Prediction",
+      title: "SmartChurn: Predicting E-Commerce Customer Drop-Off with XGBoost",
       subtitle:
-        "Built a classification model to predict customer churn using logistic regression, achieving 82% accuracy.",
+        "Deployed a machine learning model using logistic regression to predict e-commerce customer churn with 82% accuracy. Empowered business teams with insights into churn drivers and retention strategies.",
       image: require("./assets/Project_Thumbnails/churn.webp"),
       imageAlt: "Customer Churn Project",
       footerLink: [
@@ -23,7 +23,8 @@ const projectsSection = {
       ],
       category: ["Machine Learning"],
       technologies: ["Python", "Scikit-Learn", "Pandas"]
-    },
+    }
+    ,
     {
       title: "Media Mix Modeling",
       subtitle:
