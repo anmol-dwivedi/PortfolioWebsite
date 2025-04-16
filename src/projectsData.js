@@ -39,23 +39,24 @@ const projectsSection = {
     //   technologies: ["Python", "Scipy", "FastAPI", "MLflow"]
     // },
     {
-      title: "Wine Sales Forecasting App",
-      subtitle: "Built an end-to-end time series forecasting app using SARIMA, ARIMA, Prophet, LSTM, and XGBoost to forecast monthly Sparkling and Rose wine sales with detailed model diagnostics and business insights.",
-      image: require("./assets/Project_Thumbnails/WineSalesProject.webp"),
-      imageAlt: "Wine Sales Forecasting Dashboard",
-      footerLink: [
+      "title": "Time Series Uncorked: Forecasting Sparkling & Rosé Wine Sales",
+      "subtitle": "Developed a dynamic, multi-model forecasting app to predict monthly Sparkling and Rosé wine sales using SARIMA, ARIMA, Prophet, LSTM, and XGBoost. Delivered deep model diagnostics, interactive visualizations, and business-driven insights via a sleek Streamlit dashboard.",
+      "image": require("./assets/Project_Thumbnails/WineSalesProject.webp"),
+      "imageAlt": "Wine Sales Forecasting Dashboard",
+      "footerLink": [
         {
-          name: "GitHub Code",
-          url: "https://github.com/anmol-dwivedi/TimeSeries_WineSale"
+          "name": "GitHub Code",
+          "url": "https://github.com/anmol-dwivedi/TimeSeries_WineSale"
         },
         {
-          name: "Live Demo",
-          url: "https://timeserieswinesale-mbye5mjsegwbckbvv8txrg.streamlit.app/"
+          "name": "Live Demo",
+          "url": "https://timeserieswinesale-mbye5mjsegwbckbvv8txrg.streamlit.app/"
         }
       ],
-      category: ["Machine Learning"],
-      technologies: ["Python", "SARIMA", "Prophet", "LSTM", "XGBoost", "Pandas", "Streamlit"]
-    },
+      "category": ["Machine Learning"],
+      "technologies": ["Python", "SARIMA", "Prophet", "LSTM", "XGBoost", "Pandas", "Streamlit"]
+    }
+    ,
     {
       "title": "Macroeconomic Shock Analysis Using VARX: COVID-19 & Geopolitical Impact on U.S. Economy",
       "subtitle": "Analyzed how major global shocks like COVID-19 and the Russia-Ukraine conflict ripple through the U.S. economy using a powerful VARX model with 13 macro indicators. Delivered actionable economic insights through Impulse Response, Historical Decomposition, and Counterfactual Scenarios.",
