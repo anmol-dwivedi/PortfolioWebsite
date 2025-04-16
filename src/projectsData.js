@@ -91,35 +91,41 @@ const projectsSection = {
       ],
       "category": ["Machine Learning"],
       "technologies": ["Python", "PySpark",  "XGBoost", "TensorFlow", "SHAP", "Pandas", "Classification", "Model Explainability", "Finance Modelling", "Credit Risk"]
-    }
-    
-    
-    ,
-    {
-      title: "Food Vision",
-      subtitle:
-        "Built a deep learning CNN with TensorFlow to classify food images into 100+ categories.",
-      image: require("./assets/Project_Thumbnails/ComingSoon.webp"),
-      imageAlt: "Food Vision",
-      footerLink: [
-        { name: "GitHub Code", url: "#" },
-        { name: "Live Demo", url: "#" }
-      ],
-      category: ["Deep Learning"],
-      technologies: ["TensorFlow", "CNN", "Python"]
     },
     {
-      title: "Emotion Prediction",
-      subtitle: "Created an NLP model using PyTorch to predict emotions from text messages.",
-      image: require("./assets/Project_Thumbnails/ComingSoon.webp"),
-      imageAlt: "Emotion Prediction",
-      footerLink: [
-        { name: "GitHub Code", url: "#" },
-        { name: "Live Demo", url: "#" }
+      "title": "Emotion Prediction Using LLMs",
+      "subtitle": "Built a deep learning pipeline using Transformer-based models to predict human emotions from text messages with high accuracy. Integrated PyTorch and HuggingFace to fine-tune large language models for multi-class emotion classification.",
+      "image": require("./assets/Project_Thumbnails/EmotionPrediction.webp"),
+      "imageAlt": "Emotion Prediction Dashboard",
+      "footerLink": [
+        // {
+        //   "name": "GitHub Code",
+        //   "url": "https://github.com/anmol-dwivedi/EmotionPredictionLLM" 
+        // },
+        // {
+          //   "name": "Live Demo",
+          //   "url": "https://timeserieswinesale-mbye5mjsegwbckbvv8txrg.streamlit.app/"
+          // }
       ],
-      category: ["Deep Learning"],
-      technologies: ["PyTorch", "Transformers", "Python"]
+      "category": ["Deep Learning"],
+      "technologies": ["PyTorch", "Transformers", "HuggingFace", "NLP", "Python"]
     }
+    ,
+
+    // {
+    //   title: "Food Vision",
+    //   subtitle:
+    //     "Built a deep learning CNN with TensorFlow to classify food images into 100+ categories.",
+    //   image: require("./assets/Project_Thumbnails/ComingSoon.webp"),
+    //   imageAlt: "Food Vision",
+    //   footerLink: [
+    //     { name: "GitHub Code", url: "#" },
+    //     { name: "Live Demo", url: "#" }
+    //   ],
+    //   category: ["Deep Learning"],
+    //   technologies: ["TensorFlow", "CNN", "Python"]
+    // },
+    
   ],
   display: true
 };
