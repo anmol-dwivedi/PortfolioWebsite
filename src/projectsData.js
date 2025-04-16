@@ -73,7 +73,26 @@ const projectsSection = {
       ],
       "category": ["Machine Learning"],
       "technologies": ["Python", "VARX", "Statsmodels", "Pandas", "Sensitiviy Analysis", "Econometrics", "statistical Modelling" ]
+    },
+    {
+      "title": "AmEx Credit Risk Radar: Forecasting Financial Defaults with ML",
+      "subtitle": "Built a robust machine learning pipeline to predict credit card default risk using 1.1M+ customer records from the AmEx Kaggle dataset. Leveraged PySpark for EDA, engineered rolling temporal features, and tuned both XGBoost and Neural Network models for high AUC performance with SHAP-driven explainability and business-ready thresholds.",
+      "image": require("./assets/Project_Thumbnails/AmexProject.webp"),
+      "imageAlt": "Credit Default Risk Dashboard",
+      "footerLink": [
+        {
+          "name": "GitHub Code",
+          "url": "https://github.com/anmol-dwivedi/AmexCreditRiskProject"
+        },
+        // {
+          //   "name": "Live Demo",
+          //   "url": "https://timeserieswinesale-mbye5mjsegwbckbvv8txrg.streamlit.app/"
+          // }
+      ],
+      "category": ["Machine Learning"],
+      "technologies": ["Python", "PySpark",  "XGBoost", "TensorFlow", "SHAP", "Pandas", "Classification", "Model Explainability", "Finance Modelling", "Credit Risk"]
     }
+    
     
     ,
     {
