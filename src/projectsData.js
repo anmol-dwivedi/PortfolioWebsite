@@ -114,8 +114,13 @@ const projectsSection = {
         "Transformers",
         "LoRA (PEFT)",
         "HuggingFace",
+        "Weights & Biases",
         "Quantization",
-        "Python"
+        "google/gemma-2-2b",
+        "meta-llama/LLaMA-3.2-1B",
+        "intfloat/e5-mistral-7b-instruct",
+        "Python",
+
       ]
     }    
     ,
