@@ -94,23 +94,30 @@ const projectsSection = {
       "technologies": ["Python", "PySpark",  "XGBoost", "TensorFlow", "SHAP", "Pandas", "Classification", "Model Explainability", "Finance Modelling", "Credit Risk"]
     },
     {
-      "title": "Emotion Prediction Using LLMs",
-      "subtitle": "Built a deep learning pipeline using Transformer-based models to predict human emotions from text messages with high accuracy. Integrated PyTorch and HuggingFace to fine-tune large language models for multi-class emotion classification.",
+      "title": "MoodMapper: Decoding Emotions with Transformers - #1 Kaggle Solution",
+      "subtitle": "Achieved Rank 1 in a competitive Kaggle NLP challenge by fine-tuning transformer models (Gemma, LLaMA, Mistral) using PEFT and 4-bit quantization. Built an optimized deep learning pipeline for multi-label emotion classification with threshold tuning and advanced evaluation.",
       "image": require("./assets/Project_Thumbnails/EmotionPrediction.webp"),
       "imageAlt": "Emotion Prediction Dashboard",
       "footerLink": [
+        {
+          "name": "GitHub Code",
+          "url": "https://github.com/anmol-dwivedi/LLMEmotionPrediction"
+        }
         // {
-        //   "name": "GitHub Code",
-        //   "url": "https://github.com/anmol-dwivedi/EmotionPredictionLLM" 
-        // },
-        // {
-          //   "name": "Live Demo",
-          //   "url": "https://timeserieswinesale-mbye5mjsegwbckbvv8txrg.streamlit.app/"
-          // }
+        //   "name": "Live Demo",
+        //   "url": "https://your-app-link.streamlit.app/"
+        // }
       ],
-      "category": ["Deep Learning"],
-      "technologies": ["PyTorch", "Transformers", "HuggingFace", "NLP", "Python"]
-    }
+      "category": ["Deep Learning", "NLP"],
+      "technologies": [
+        "PyTorch",
+        "Transformers",
+        "LoRA (PEFT)",
+        "HuggingFace",
+        "Quantization",
+        "Python"
+      ]
+    }    
     ,
 
     // {
